@@ -1,17 +1,29 @@
 package com.twu.biblioteca;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import static com.twu.biblioteca.Menu.createOptionsList;
 
 public class BibliotecaApp {
 
+    private final Library library;
+    private final Menu menu;
 
-    public static void executeMenu(){
+    public BibliotecaApp(Library library, Menu menu) {
+        this.library = library;
+        this.menu = menu;
+    }
+
+    public static void executeProgramme(){
+
+        Menu menu = new Menu();
+
+        //Prints welcome message
+
+        menu.printWelcomeMessage();
 
         //Prints Menu
-        Menu.printMenu();
+        menu.printMenu();
 
         //While the programme is running the menu, it asks the user for a number input to select an option
         //If the user selects from options 1-3, that option is executed and then the menu is run again
@@ -40,8 +52,7 @@ public class BibliotecaApp {
         Library.BookLibrary(book1);
         Library.BookLibrary(book2);
         //Prints Welcome Message
-        Menu.printWelcomeMessage();
-        executeMenu();
+        executeProgramme();
 
     }
 }
