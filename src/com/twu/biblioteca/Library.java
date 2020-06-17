@@ -19,7 +19,7 @@ public class Library {
         String bookDetails = "";
 
         for(Book book: bookList){
-            bookDetails += "| " + book.getBookTitle() + " | " + book.getBookAuthor() + " | " + book.getBookYear() + " | \n";
+            bookDetails += "| " + book.getBookTitle() + " | " + book.getBookAuthor() + " | " + book.getBookYear() + " |\n";
 
         }
         return bookDetails;

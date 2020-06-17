@@ -41,7 +41,7 @@ public class BibliotecaApp {
                 Integer selectedOption = optionSelection.nextInt();
                 if (selectedOption >= 1 && selectedOption <= 3){
                     createOptionsList().get(selectedOption - 1).excuteOption();
-                    Menu.printMenu();
+                    menu.printMenu();
                 }
                 if(selectedOption == 4){
                     createOptionsList().get(selectedOption - 1).excuteOption();

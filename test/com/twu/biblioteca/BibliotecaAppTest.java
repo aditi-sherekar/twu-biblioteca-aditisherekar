@@ -20,7 +20,8 @@ public class BibliotecaAppTest {
 
     @Test
     public void displaysCorrectInputMessage(){
-        assertEquals("Welcome to Biblioteca. Your one-stop-shop for great book titles in Banglore!\n", outContent.toString());
+        BibliotecaApp.executeProgramme();
+        assertEquals("Please select a number from the option above:\n", outContent.toString());
     }
 
 
