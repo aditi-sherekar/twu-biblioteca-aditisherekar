@@ -48,7 +48,7 @@ public class BibliotecaApp {
                     break;
                 }
                 if(selectedOption <= 0 || selectedOption > 4 ){
-                System.out.println("Invalid input, try again!");
+                System.out.println("Please select a valid option");
                 menu.printMenu();
             }
 
