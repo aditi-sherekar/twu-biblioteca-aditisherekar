@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import static com.twu.biblioteca.Menu.createOptionsList;
@@ -30,17 +31,37 @@ public class BibliotecaApp {
         //If the user selects option 4, the exit option is executed and the program ends.
         while (true){
             Scanner optionSelection = new Scanner(System.in);
-            System.out.println("Please select a number from the option above:");
 
-            Integer selectedOption = optionSelection.nextInt();
-            if (selectedOption < 4){
-                createOptionsList().get(selectedOption - 1).excuteOption();
-                Menu.printMenu();
+            try
+            {
+                System.out.println("Please select a number from the option above:");
+                //nextInt will throw InputMismatchException
+                //if the next token does not match the Integer
+                //regular expression, or is out of range
+                Integer selectedOption = optionSelection.nextInt();
+                if (selectedOption >= 1 && selectedOption <= 3){
+                    createOptionsList().get(selectedOption - 1).excuteOption();
+                    Menu.printMenu();
+                }
+                if(selectedOption == 4){
+                    createOptionsList().get(selectedOption - 1).excuteOption();
+                    break;
+                }
+                if(selectedOption <= 0 || selectedOption > 4 ){
+                System.out.println("Invalid input, try again!");
+                menu.printMenu();
             }
-            if(selectedOption == 4){
-                createOptionsList().get(selectedOption - 1).excuteOption();
-                break;
+
             }
+            catch(InputMismatchException exception)
+            {
+                //Print "This is not an integer"
+                //when user put other than integer
+                System.out.println("This is not an integer, try again!");
+                menu.printMenu();
+            }
+
+
         }
 
     }
