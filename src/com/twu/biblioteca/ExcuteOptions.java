@@ -5,4 +5,6 @@ public interface ExcuteOptions {
     String displayOptionName();
 
 
+    void excuteOption();
+
 }
