@@ -47,7 +47,7 @@ public class BibliotecaApp {
 
     public static void main(String[] args) {
 
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("Mark"), new Year("1999"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
         Book book2 = new Book(new Title("The Headspace Guide to Meditation & Mindfulness"), new Author("Andy Puddicombe"), new Year("2011"));
         Library.BookLibrary(book1);
         Library.BookLibrary(book2);
