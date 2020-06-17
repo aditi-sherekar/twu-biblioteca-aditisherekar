@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="91aabe72-0a77-4654-9fae-9556f271389b" name="Default Changelist" comment="" />
+    <list default="true" id="91aabe72-0a77-4654-9fae-9556f271389b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/DisplayBookList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/ExcuteOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/QuitApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/ReturnBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Options.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MenuTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,8 +40,12 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dOIPI6KqJEMGMwVGWAAMq7WfQG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,6 +63,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.twu.biblioteca" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.twu.biblioteca" />
     </key>
@@ -43,7 +78,7 @@
       <command value="git commit -m &quot;Add welcome message and Menu setup&quot;" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MenuTest.displaysWelcomeMessage">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca-master" />
@@ -73,6 +108,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MenuTest.displaysMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MenuTest" />
+      <option name="METHOD_NAME" value="displaysMenu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MenuTest.displaysWelcomeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <option name="PACKAGE_NAME" value="" />
@@ -83,60 +128,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="TWU_Biblioteca-master" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="TWU_Biblioteca-master" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.BibliotecaApp" />
       <item itemvalue="JUnit.BibliotecaAppTest.canUserSeeCorrectWelcomeMessage" />
       <item itemvalue="JUnit.MenuTest.displaysWelcomeMessage" />
+      <item itemvalue="JUnit.MenuTest.displaysMenu" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MenuTest.displaysMenu" />
         <item itemvalue="JUnit.MenuTest.displaysWelcomeMessage" />
         <item itemvalue="JUnit.BibliotecaAppTest.canUserSeeCorrectWelcomeMessage" />
       </list>
@@ -154,6 +154,17 @@
       <updated>1592289686856</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="128" y="23" key="#Project_Structure" timestamp="1592290279296">
@@ -177,42 +188,55 @@
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="377" y="182" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.726@0.23.1280.726" timestamp="1592290308112" />
-    <state width="1280" height="180" key="GridCell.Tab.0.bottom" timestamp="1592305158279">
-      <screen x="0" y="23" width="1280" height="725" />
+    <state x="378" y="139" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592350486082">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1280" height="180" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1592305158279" />
-    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1592300470673" />
+    <state x="378" y="139" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592350486082" />
+    <state width="1280" height="180" key="GridCell.Tab.0.bottom" timestamp="1592351502514">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state width="1280" height="180" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1592305191295" />
+    <state width="1280" height="180" key="GridCell.Tab.0.bottom/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592351502514" />
+    <state width="1280" height="180" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1592305433257" />
     <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1592291909810" />
     <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1592293006456" />
-    <state width="1280" height="180" key="GridCell.Tab.0.center" timestamp="1592305158278">
-      <screen x="0" y="23" width="1280" height="725" />
+    <state width="1280" height="180" key="GridCell.Tab.0.center" timestamp="1592351502513">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1280" height="180" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1592305158278" />
-    <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1592300470672" />
+    <state width="1280" height="180" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1592305191294" />
+    <state width="1280" height="180" key="GridCell.Tab.0.center/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592351502513" />
+    <state width="1280" height="180" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1592305433256" />
     <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1592291909809" />
     <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1592293006455" />
-    <state width="1280" height="180" key="GridCell.Tab.0.left" timestamp="1592305158277">
-      <screen x="0" y="23" width="1280" height="725" />
+    <state width="1280" height="180" key="GridCell.Tab.0.left" timestamp="1592351502513">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1280" height="180" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1592305158277" />
-    <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1592300470672" />
+    <state width="1280" height="180" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1592305191293" />
+    <state width="1280" height="180" key="GridCell.Tab.0.left/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592351502513" />
+    <state width="1280" height="180" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1592305433256" />
     <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1592291909808" />
     <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1592293006454" />
-    <state width="1280" height="180" key="GridCell.Tab.0.right" timestamp="1592305158278">
-      <screen x="0" y="23" width="1280" height="725" />
+    <state width="1280" height="180" key="GridCell.Tab.0.right" timestamp="1592351502514">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1280" height="180" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1592305158278" />
-    <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1592300470673" />
+    <state width="1280" height="180" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1592305191295" />
+    <state width="1280" height="180" key="GridCell.Tab.0.right/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592351502514" />
+    <state width="1280" height="180" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1592305433257" />
     <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1592291909809" />
     <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1592293006455" />
     <state x="141" y="24" key="SettingsEditor" timestamp="1592289780673">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="141" y="24" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1592289780673" />
-    <state x="305" y="173" width="670" height="672" key="run.anything.popup" timestamp="1592305158130">
-      <screen x="0" y="23" width="1280" height="725" />
+    <state x="416" y="158" key="refactoring.ChangeSignatureDialog" timestamp="1592349861727">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="305" y="173" width="670" height="672" key="run.anything.popup/0.23.1280.725@0.23.1280.725" timestamp="1592305158130" />
+    <state x="416" y="158" key="refactoring.ChangeSignatureDialog/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592349861727" />
+    <state x="305" y="173" width="670" height="673" key="run.anything.popup" timestamp="1592351248330">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="305" y="173" width="670" height="672" key="run.anything.popup/0.23.1280.725@0.23.1280.725" timestamp="1592305191197" />
+    <state x="305" y="173" width="670" height="673" key="run.anything.popup/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592351248330" />
     <state x="305" y="173" key="run.anything.popup/0.23.1280.726@0.23.1280.726" timestamp="1592289791538" />
     <state x="305" y="174" width="670" height="675" key="run.anything.popup/0.23.1280.729@0.23.1280.729" timestamp="1592293006388" />
   </component>
