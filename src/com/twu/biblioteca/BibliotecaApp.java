@@ -72,6 +72,7 @@ public class BibliotecaApp {
         Book book2 = new Book(new Title("The Headspace Guide to Meditation & Mindfulness"), new Author("Andy Puddicombe"), new Year("2011"));
         Library.addBook(book1);
         Library.addBook(book2);
+        Library.addBook(null);
         //Prints Welcome Message
         printWelcomeMessage();
         printProgrammeMenu();

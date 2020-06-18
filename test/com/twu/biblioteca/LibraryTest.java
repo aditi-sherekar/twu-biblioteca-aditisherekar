@@ -1,9 +1,12 @@
 package com.twu.biblioteca;
 
+
 import org.junit.Test;
 
 import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class LibraryTest {
 
@@ -25,6 +28,20 @@ public class LibraryTest {
 
         assertEquals("| The Great Gatsby | F. Scott Fitzgerald | 1925 |\n", Library.getBookDetails());
 
+    }
+
+   // @Rule
+   // public ExpectedException exception = ExpectedException.none();
+
+    @Test
+    public void doesAddBookHandleNullPointerException()  {
+        try {
+
+            Library.addBook(null);
+            fail();
+        } catch (NullPointerException ex) {
+            assertEquals("The argument cannot be null", ex.getMessage());
+        }
     }
 
 }

@@ -9,17 +9,19 @@ public class Library {
     static CopyOnWriteArrayList<Book> checkedOutBookList = new CopyOnWriteArrayList<Book>();
 
 
-    public static void addBook(Book book){
+    public static void addBook(Book book) {
 
         if (book == null){
-            BookLibrary();
+            throw new NullPointerException("The argument cannot be null");
         }
         else{
             bookList.add(book);
         }
-
         //return bookList;
+       // return null;
     }
+
+
 
     public static CopyOnWriteArrayList<Book> BookLibrary(){
 
