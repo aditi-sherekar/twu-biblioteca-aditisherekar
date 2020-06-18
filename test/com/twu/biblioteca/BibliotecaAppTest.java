@@ -20,7 +20,7 @@ public class BibliotecaAppTest {
 
     @Test
     public void displaysCorrectInputMessage(){
-        BibliotecaApp.executeProgramme();
+        BibliotecaApp.printProgrammeMenu();
         assertEquals("Please select a number from the option above:\n", outContent.toString());
     }
 

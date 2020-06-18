@@ -35,7 +35,7 @@ public class DisplayBookListTest {
         String header = "| Book Title | Authour | Publication Year |\n";
         Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
         String bookDetails = "| The Great Gatsby | F. Scott Fitzgerald | 1925 |\n";
-        Library.BookLibrary(book1);
+        Library.addBook(book1);
         Menu.createOptionsList().get(displayNameIndex + 1).excuteOption();
 
         assertEquals(header + bookDetails, outContent.toString());

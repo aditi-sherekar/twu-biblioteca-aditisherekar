@@ -14,14 +14,14 @@ public class LibraryTest {
         Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
         bookList.add(book1);
 
-        assertEquals(bookList, Library.BookLibrary(book1));
+        assertEquals(bookList, Library.BookLibrary());
     }
 
     @Test
     public void doesLibraryReturnCorrectBookDetails(){
 
         Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
-        Library.BookLibrary(book1);
+        Library.addBook(book1);
 
         assertEquals("| The Great Gatsby | F. Scott Fitzgerald | 1925 |\n", Library.getBookDetails());
 

@@ -15,13 +15,14 @@ public class BibliotecaApp {
         this.menu = menu;
     }
 
-    public static void executeProgramme(){
+    public static void printWelcomeMessage(){
+
+        Menu.printWelcomeMessage();
+    }
+
+    public static void printProgrammeMenu(){
 
         Menu menu = new Menu();
-
-        //Prints welcome message
-
-        menu.printWelcomeMessage();
 
         //Prints Menu
         menu.printMenu();
@@ -34,7 +35,6 @@ public class BibliotecaApp {
 
             try
             {
-                System.out.println("Please select a number from the option above:");
                 //nextInt will throw InputMismatchException
                 //if the next token does not match the Integer
                 //regular expression, or is out of range
@@ -48,7 +48,7 @@ public class BibliotecaApp {
                     break;
                 }
                 if(selectedOption <= 0 || selectedOption > 4 ){
-                System.out.println("Please select a valid option");
+                System.out.println("Please select a valid option!");
                 menu.printMenu();
             }
 
@@ -70,10 +70,11 @@ public class BibliotecaApp {
 
         Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
         Book book2 = new Book(new Title("The Headspace Guide to Meditation & Mindfulness"), new Author("Andy Puddicombe"), new Year("2011"));
-        Library.BookLibrary(book1);
-        Library.BookLibrary(book2);
+        Library.addBook(book1);
+        Library.addBook(book2);
         //Prints Welcome Message
-        executeProgramme();
+        printWelcomeMessage();
+        printProgrammeMenu();
 
     }
 }

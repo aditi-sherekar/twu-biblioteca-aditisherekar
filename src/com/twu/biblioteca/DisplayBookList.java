@@ -18,8 +18,8 @@ public class DisplayBookList implements ExcuteOptions {
     @Override
     public void excuteOption(){
 
-        System.out.println("| Book Title | Authour | Publication Year |");
-        System.out.print(Library.getBookDetails());
+        System.out.println("   | Book Title | Authour | Publication Year |");
+        System.out.println(Library.getBookDetails());
 
     }
 }

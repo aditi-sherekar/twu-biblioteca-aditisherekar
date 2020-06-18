@@ -1,15 +1,22 @@
 package com.twu.biblioteca;
 
-import java.util.ArrayList;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Library {
 
-    private static ArrayList<Book> bookList = new ArrayList<Book>();
+
+    static CopyOnWriteArrayList<Book> bookList = new CopyOnWriteArrayList<Book>();
+    static CopyOnWriteArrayList<Book> checkedOutBookList = new CopyOnWriteArrayList<Book>();
 
 
-    public static ArrayList<Book> BookLibrary(Book book){
+    public static void addBook(Book book){
 
         bookList.add(book);
+
+        //return bookList;
+    }
+
+    public static CopyOnWriteArrayList<Book> BookLibrary(){
 
         return bookList;
     }
@@ -18,11 +25,17 @@ public class Library {
 
         String bookDetails = "";
 
-        for(Book book: bookList){
-            bookDetails += "| " + book.getBookTitle() + " | " + book.getBookAuthor() + " | " + book.getBookYear() + " |\n";
+        for(Book book : bookList){
+            bookDetails += ((bookList.indexOf(book) + 1) + ". " + "| " + book.getBookTitle() + " | " + book.getBookAuthor() + " | " + book.getBookYear() + " |\n");
 
         }
         return bookDetails;
+    }
+
+    public static CopyOnWriteArrayList<Book> CheckedOutBook(){
+
+
+        return checkedOutBookList;
     }
 
 }

@@ -8,7 +8,7 @@ public class Menu {
     private static List<ExcuteOptions> optionsList;
 
 
-    public static List<ExcuteOptions> createOptionsList(){
+    public static List<ExcuteOptions> createOptionsList() {
         optionsList = new LinkedList<>();
         optionsList.add(new DisplayBookList());
         optionsList.add(new CheckOutBook());
@@ -27,9 +27,9 @@ public class Menu {
     public static void printMenu() {
 
         System.out.println("---------Menu---------");
-        for (int index = 0; index < createOptionsList().size(); index++){
+        for (int index = 0; index < createOptionsList().size(); index++) {
 
-            System.out.println((index +1) + "." + " " + createOptionsList().get(index).displayOptionName());
+            System.out.println((index + 1) + "." + " " + createOptionsList().get(index).displayOptionName());
 
         }
 
