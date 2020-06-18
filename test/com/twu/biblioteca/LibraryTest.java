@@ -25,6 +25,6 @@ public class LibraryTest {
 
         assertEquals("| The Great Gatsby | F. Scott Fitzgerald | 1925 |\n", Library.getBookDetails());
 
-
     }
+
 }

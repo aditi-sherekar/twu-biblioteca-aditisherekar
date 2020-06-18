@@ -28,11 +28,12 @@ public class MenuTest {
     @Test
     public void displaysMenu(){
         Menu.printMenu();
-        assertEquals("---------Menu---------\n" +
+        assertEquals("\n---------Menu---------\n" +
                 "1. Display Books\n" +
                 "2. Checkout Books\n" +
                 "3. Return Books\n" +
-                "4. Exit\n", outContent.toString());
+                "4. Exit\n" +
+                "\nPlease select an option from above:\n", outContent.toString());
 
     }
 

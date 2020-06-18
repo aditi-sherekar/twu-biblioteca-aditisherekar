@@ -21,17 +21,17 @@ public class Menu {
 
     public static void printWelcomeMessage() {
 
-        System.out.println("Welcome to Biblioteca. Your one-stop-shop for great book titles in Banglore!");
+        System.out.println("\nWelcome to Biblioteca. Your one-stop-shop for great book titles in Banglore!");
     }
 
     public static void printMenu() {
 
-        System.out.println("---------Menu---------");
+        System.out.println("\n---------Menu---------");
         for (int index = 0; index < createOptionsList().size(); index++) {
 
             System.out.println((index + 1) + "." + " " + createOptionsList().get(index).displayOptionName());
 
         }
-
+        System.out.println("\nPlease select an option from above:");
     }
 }

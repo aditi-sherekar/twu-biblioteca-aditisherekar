@@ -11,7 +11,12 @@ public class Library {
 
     public static void addBook(Book book){
 
-        bookList.add(book);
+        if (book == null){
+            BookLibrary();
+        }
+        else{
+            bookList.add(book);
+        }
 
         //return bookList;
     }
