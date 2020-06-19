@@ -6,12 +6,14 @@ import static org.junit.Assert.assertEquals;
 
 public class TitleTest {
 
-    Title title = new Title("The Great Gatsby");
 
     @Test
     public void doesGetTitleGetCorrectTitle(){
 
+        Title title = new Title("The Great Gatsby");
+
         assertEquals("The Great Gatsby", title.getTitle());
 
     }
+
 }
