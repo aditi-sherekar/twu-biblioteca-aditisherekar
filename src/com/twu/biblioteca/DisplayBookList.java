@@ -1,10 +1,6 @@
 package com.twu.biblioteca;
 
 
-import java.awt.*;
-import java.util.LinkedList;
-import java.util.List;
-
 public class DisplayBookList implements ExcuteOptions {
 
 
@@ -18,7 +14,7 @@ public class DisplayBookList implements ExcuteOptions {
     @Override
     public void excuteOption(){
 
-        System.out.println("   | Book Title | Authour | Publication Year |");
+        System.out.println("   | Book Title | Author | Publication Year |");
         if (Library.BookLibrary().size() != 0){
             System.out.print(Library.getBookDetails());
         }

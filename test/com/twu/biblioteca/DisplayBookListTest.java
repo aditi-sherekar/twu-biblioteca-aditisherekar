@@ -31,7 +31,7 @@ public class DisplayBookListTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new DisplayBookList());
 
-        String header = "   | Book Title | Authour | Publication Year |\n";
+        String header = "   | Book Title | Author | Publication Year |\n";
         Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
         String bookDetails = "1. | The Great Gatsby | F. Scott Fitzgerald | 1925 |\n";
         Library.addBook(book1);
@@ -43,7 +43,7 @@ public class DisplayBookListTest {
     @Test
     public void doesDisplayBookListHandleNullBookLibraryError(){
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new DisplayBookList());
-        String header = "   | Book Title | Authour | Publication Year |\n";
+        String header = "   | Book Title | Author | Publication Year |\n";
         String bookDetails = "   |      No books available to display      |";
         Library.addBook(null);
         Menu.createOptionsList().get(displayNameIndex + 1).excuteOption();
