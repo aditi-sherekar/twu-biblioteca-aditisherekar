@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91aabe72-0a77-4654-9fae-9556f271389b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/ReturnBookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/CheckOutBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/CheckOutBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/ReturnBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/ReturnBook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/CheckOutBookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/CheckOutBookTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/ReturnBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/ReturnBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckOutBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckOutBookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,11 +93,12 @@
       <command value="git commit -m &quot;Add null  pointer exception test to LibraryTest" />
       <command value="git commit -m &quot;Add null  pointer exception test to LibraryTest&quot;" />
       <command value="git commit -m &quot;Add tests for empty strings for Book Title, Author, Year&quot;" />
-      <command value="git add -A" />
       <command value="git commit -m &quot;Add CheckOutBookTest&quot;" />
+      <command value="git add -A" />
+      <command value="git commit -m &quot;Add Return Book Tests&quot;" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReturnBookTest.doesReturnBookRemoveBookFromCheckedOutBookAfterReturn">
+  <component name="RunManager" selected="JUnit.CheckOutBookTest.doesCheckOutBookAddBookToCheckedOutBookAfterCheckOut">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca-master" />
@@ -116,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnBookTest.doesReturnBookGivePromptIfCheckedOutBooksNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckOutBookTest.doesCheckOutBookAddBookToCheckedOutBookAfterCheckOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -125,14 +121,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnBookTest" />
-      <option name="METHOD_NAME" value="doesReturnBookGivePromptIfCheckedOutBooksNotEmpty" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.CheckOutBookTest" />
+      <option name="METHOD_NAME" value="doesCheckOutBookAddBookToCheckedOutBookAfterCheckOut" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnBookTest.doesReturnBookGiveSuccessfulReturnMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckOutBookTest.doesCheckOutBookRemoveBookFromLibraryAfterCheckOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -141,8 +137,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnBookTest" />
-      <option name="METHOD_NAME" value="doesReturnBookGiveSuccessfulReturnMessage" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.CheckOutBookTest" />
+      <option name="METHOD_NAME" value="doesCheckOutBookRemoveBookFromLibraryAfterCheckOut" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,19 +194,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.BibliotecaApp" />
-      <item itemvalue="JUnit.ReturnBookTest.doesReturnBookGivePromptIfCheckedOutBooksNotEmpty" />
-      <item itemvalue="JUnit.ReturnBookTest.doesReturnBookGiveSuccessfulReturnMessage" />
       <item itemvalue="JUnit.ReturnBookTest.doesReturnBookGiveUnSuccessfulReturnMessage" />
       <item itemvalue="JUnit.ReturnBookTest.doesReturnBookPutBookBackInLibraryAfterReturn" />
       <item itemvalue="JUnit.ReturnBookTest.doesReturnBookRemoveBookFromCheckedOutBookAfterReturn" />
+      <item itemvalue="JUnit.CheckOutBookTest.doesCheckOutBookRemoveBookFromLibraryAfterCheckOut" />
+      <item itemvalue="JUnit.CheckOutBookTest.doesCheckOutBookAddBookToCheckedOutBookAfterCheckOut" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheckOutBookTest.doesCheckOutBookAddBookToCheckedOutBookAfterCheckOut" />
+        <item itemvalue="JUnit.CheckOutBookTest.doesCheckOutBookRemoveBookFromLibraryAfterCheckOut" />
         <item itemvalue="JUnit.ReturnBookTest.doesReturnBookRemoveBookFromCheckedOutBookAfterReturn" />
         <item itemvalue="JUnit.ReturnBookTest.doesReturnBookPutBookBackInLibraryAfterReturn" />
         <item itemvalue="JUnit.ReturnBookTest.doesReturnBookGiveUnSuccessfulReturnMessage" />
-        <item itemvalue="JUnit.ReturnBookTest.doesReturnBookGiveSuccessfulReturnMessage" />
-        <item itemvalue="JUnit.ReturnBookTest.doesReturnBookGivePromptIfCheckedOutBooksNotEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -281,14 +277,14 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="100" y="123" width="1080" height="525" key="DiffContextDialog/0.23.1280.725@0.23.1280.725" timestamp="1592436035209" />
-    <state width="1638" height="201" key="GridCell.Tab.0.bottom" timestamp="1592546589510">
+    <state width="1638" height="201" key="GridCell.Tab.0.bottom" timestamp="1592547661791">
       <screen x="1280" y="23" width="1680" height="1027" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1592443035539" />
     <state width="1280" height="180" key="GridCell.Tab.0.bottom/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041378" />
     <state width="1638" height="215" key="GridCell.Tab.0.bottom/0.23.1280.726/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592537907069" />
     <state width="1280" height="180" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1592305433257" />
-    <state width="1638" height="201" key="GridCell.Tab.0.bottom/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592546589510" />
+    <state width="1638" height="201" key="GridCell.Tab.0.bottom/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592547661791" />
     <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1592291909810" />
     <state width="1638" height="201" key="GridCell.Tab.0.bottom/0.23.1280.729/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592546361792" />
     <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1592293006456" />
@@ -297,14 +293,14 @@
     <state width="1238" height="207" key="GridCell.Tab.0.bottom/0.23.1280.731@0.23.1280.731" timestamp="1592387365636" />
     <state width="1280" height="112" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592385632192" />
     <state width="1638" height="201" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1592542627981" />
-    <state width="1638" height="201" key="GridCell.Tab.0.center" timestamp="1592546589509">
+    <state width="1638" height="201" key="GridCell.Tab.0.center" timestamp="1592547661788">
       <screen x="1280" y="23" width="1680" height="1027" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1592443035538" />
     <state width="1280" height="180" key="GridCell.Tab.0.center/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041377" />
     <state width="1638" height="215" key="GridCell.Tab.0.center/0.23.1280.726/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592537907067" />
     <state width="1280" height="180" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1592305433256" />
-    <state width="1638" height="201" key="GridCell.Tab.0.center/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592546589509" />
+    <state width="1638" height="201" key="GridCell.Tab.0.center/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592547661788" />
     <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1592291909809" />
     <state width="1638" height="201" key="GridCell.Tab.0.center/0.23.1280.729/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592546361787" />
     <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1592293006455" />
@@ -313,14 +309,14 @@
     <state width="1238" height="207" key="GridCell.Tab.0.center/0.23.1280.731@0.23.1280.731" timestamp="1592387365635" />
     <state width="1280" height="112" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592385632187" />
     <state width="1638" height="201" key="GridCell.Tab.0.center/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1592542627980" />
-    <state width="1638" height="201" key="GridCell.Tab.0.left" timestamp="1592546589508">
+    <state width="1638" height="201" key="GridCell.Tab.0.left" timestamp="1592547661787">
       <screen x="1280" y="23" width="1680" height="1027" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1592443035538" />
     <state width="1280" height="180" key="GridCell.Tab.0.left/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041376" />
     <state width="1638" height="215" key="GridCell.Tab.0.left/0.23.1280.726/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592537907066" />
     <state width="1280" height="180" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1592305433256" />
-    <state width="1638" height="201" key="GridCell.Tab.0.left/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592546589508" />
+    <state width="1638" height="201" key="GridCell.Tab.0.left/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592547661787" />
     <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1592291909808" />
     <state width="1638" height="201" key="GridCell.Tab.0.left/0.23.1280.729/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592546361781" />
     <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1592293006454" />
@@ -329,14 +325,14 @@
     <state width="1238" height="207" key="GridCell.Tab.0.left/0.23.1280.731@0.23.1280.731" timestamp="1592387365634" />
     <state width="1280" height="112" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592385632184" />
     <state width="1638" height="201" key="GridCell.Tab.0.left/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1592542627979" />
-    <state width="1638" height="201" key="GridCell.Tab.0.right" timestamp="1592546589509">
+    <state width="1638" height="201" key="GridCell.Tab.0.right" timestamp="1592547661790">
       <screen x="1280" y="23" width="1680" height="1027" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1592443035538" />
     <state width="1280" height="180" key="GridCell.Tab.0.right/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041378" />
     <state width="1638" height="215" key="GridCell.Tab.0.right/0.23.1280.726/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592537907068" />
     <state width="1280" height="180" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1592305433257" />
-    <state width="1638" height="201" key="GridCell.Tab.0.right/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592546589509" />
+    <state width="1638" height="201" key="GridCell.Tab.0.right/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592547661790" />
     <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1592291909809" />
     <state width="1638" height="201" key="GridCell.Tab.0.right/0.23.1280.729/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592546361788" />
     <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1592293006455" />
@@ -398,13 +394,14 @@
     </state>
     <state x="416" y="158" key="refactoring.ChangeSignatureDialog/0.23.1280.725@0.23.1280.725" timestamp="1592436360324" />
     <state x="416" y="158" key="refactoring.ChangeSignatureDialog/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592349861727" />
-    <state x="1680" y="225" width="880" height="904" key="run.anything.popup" timestamp="1592542627925">
-      <screen x="1280" y="23" width="1680" height="975" />
+    <state x="1680" y="236" width="880" height="953" key="run.anything.popup" timestamp="1592547585486">
+      <screen x="1280" y="23" width="1680" height="1027" />
     </state>
     <state x="305" y="173" width="670" height="672" key="run.anything.popup/0.23.1280.725@0.23.1280.725" timestamp="1592432881264" />
     <state x="305" y="173" width="670" height="673" key="run.anything.popup/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041294" />
     <state x="1680" y="236" width="880" height="953" key="run.anything.popup/0.23.1280.726/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592537907007" />
     <state x="305" y="173" key="run.anything.popup/0.23.1280.726@0.23.1280.726" timestamp="1592289791538" />
+    <state x="1680" y="236" width="880" height="953" key="run.anything.popup/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592547585486" />
     <state x="1680" y="236" width="880" height="953" key="run.anything.popup/0.23.1280.729/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592477533034" />
     <state x="305" y="174" width="670" height="675" key="run.anything.popup/0.23.1280.729@0.23.1280.729" timestamp="1592293006388" />
     <state x="1680" y="235" width="880" height="953" key="run.anything.popup/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640238" />
