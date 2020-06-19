@@ -6,13 +6,20 @@ public class Year {
 
     public Year(String number) {
 
-        this.year = number;
+        if (number == ""){
+
+            this.year = "Publication Year Not Given";
+        }
+        else {
+            this.year = number;
+        }
+
     }
 
 
     public String getYear(){
 
-        return year;
+        return this.year;
 
     }
 

@@ -6,7 +6,12 @@ public class Author {
 
     public Author(String name) {
 
-        this.author = name;
+        if (name == ""){
+            this.author = "Author Not Given";
+        }
+        else{
+            this.author = name;
+        }
     }
 
 

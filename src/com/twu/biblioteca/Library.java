@@ -14,6 +14,9 @@ public class Library {
         if (book == null){
             throw new NullPointerException("The argument cannot be null");
         }
+        else if (book.getBookTitle() == ""){
+            throw new NullPointerException("The book requires a title");
+        }
         else{
             bookList.add(book);
         }

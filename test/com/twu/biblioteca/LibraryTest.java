@@ -44,4 +44,15 @@ public class LibraryTest {
         }
     }
 
+    @Test
+    public void doesAddBookHandleNoTitleBook(){
+        try {
+            Book book1 = new Book(new Title(""), new Author("F. Scott Fitzgerald"), new Year("1925"));
+            Library.addBook(book1);
+            fail();
+        } catch (NullPointerException ex) {
+            assertEquals("The book requires a title", ex.getMessage());
+        }
+    }
+
 }
