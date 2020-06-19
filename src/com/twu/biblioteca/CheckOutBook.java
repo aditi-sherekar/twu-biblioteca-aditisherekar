@@ -33,7 +33,6 @@ public class CheckOutBook implements ExcuteOptions {
 
         Iterator<Book> bookIterator = Library.BookLibrary().iterator();
 
-
         while(bookIterator.hasNext()) {
             Book book = bookIterator.next();
             if (book.getBookTitle().matches(optionSelected)) {

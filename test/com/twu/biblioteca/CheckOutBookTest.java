@@ -50,12 +50,7 @@ public class CheckOutBookTest {
         String input = "The Great Gatsby";
         CheckOutBook.processBookCheckOut(input);
 
-
         assertEquals("Thank you! Enjoy the book!\n", outContent.toString());
     }
-
-
-
-
 
 }
