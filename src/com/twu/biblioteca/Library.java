@@ -50,6 +50,19 @@ public class Library {
         return checkedOutBookList;
     }
 
+    public static void addMovie(Movie movie) {
+
+        if (movie == null){
+            throw new NullPointerException("The argument cannot be null");
+        }
+        else if (movie.getMovieTitle() == ""){
+            throw new NullPointerException("The book requires a title");
+        }
+        else{
+            movieList.add(movie);
+        }
+    }
+
     public static CopyOnWriteArrayList<Movie> MovieLibrary() {
         return movieList;
     }
