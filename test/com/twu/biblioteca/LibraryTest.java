@@ -55,4 +55,14 @@ public class LibraryTest {
         }
     }
 
+    @Test
+    public void doesMovieLibraryReturnListOfMovies(){
+
+        ArrayList<Movie> movieList = new ArrayList<Movie>();
+        Movie movie1 = new Movie(new Title("Black Panther"), new Director("Ryan Coogler"), new ReleaseYear("2018"));
+        movieList.add(movie1);
+
+        assertEquals(movieList, Library.MovieLibrary());
+    }
+
 }
