@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class MovieTest {
 
-    Movie movie = new Movie(new Title("The Great Gatsby"), new Director("F. Scott Fitzgerald"), new Year("1925"));
+    Movie movie = new Movie(new MovieTitle("The Great Gatsby"), new Director("F. Scott Fitzgerald"), new MovieYear("1925"));
 
     @Test
     public void doesGetMovieTitleGetCorrectTitle(){

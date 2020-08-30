@@ -2,13 +2,13 @@ package com.twu.biblioteca;
 
 public class Movie {
 
-    private final Title title;
-    private final Author author;
-    private final Year year;
+    private final MovieTitle title;
+    private final Director director;
+    private final MovieYear year;
 
-    public Movie(Title title, Author author, Year year) {
+    public Movie(MovieTitle title, Director director, MovieYear year) {
         this.title = title;
-        this.author = author;
+        this.director = director;
         this.year = year;
     }
 
@@ -18,7 +18,7 @@ public class Movie {
     }
 
     public String getMovieDirector() {
-        return this.author.getDirector();
+        return this.director.getDirector();
     }
 
     public String getMovieYear() {
