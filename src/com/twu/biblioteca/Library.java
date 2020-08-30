@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import java.util.Collection;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Library {
@@ -7,7 +8,8 @@ public class Library {
 
     static CopyOnWriteArrayList<Book> bookList = new CopyOnWriteArrayList<Book>();
     static CopyOnWriteArrayList<Book> checkedOutBookList = new CopyOnWriteArrayList<Book>();
-
+    static CopyOnWriteArrayList<Movie> movieList = new CopyOnWriteArrayList<Book>();
+    static CopyOnWriteArrayList<Movie> checkedOutMovieList = new CopyOnWriteArrayList<Book>();
 
     public static void addBook(Book book) {
 
@@ -48,4 +50,7 @@ public class Library {
         return checkedOutBookList;
     }
 
+    public static CopyOnWriteArrayList<Movie> MovieLibrary() {
+        return movieList;
+    }
 }
