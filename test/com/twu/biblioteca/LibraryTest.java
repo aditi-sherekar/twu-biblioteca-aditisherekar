@@ -59,10 +59,32 @@ public class LibraryTest {
     public void doesMovieLibraryReturnListOfMovies(){
 
         ArrayList<Movie> movieList = new ArrayList<Movie>();
-        Movie movie1 = new Movie(new Title("Black Panther"), new Director("Ryan Coogler"), new ReleaseYear("2018"));
+        Movie movie1 = new Movie(new Title("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         movieList.add(movie1);
 
         assertEquals(movieList, Library.MovieLibrary());
+    }
+
+    @Test
+    public void doesAddMovieHandleNullPointerException()  {
+        try {
+
+            Library.addMovie(null);
+            fail();
+        } catch (NullPointerException ex) {
+            assertEquals("The argument cannot be null", ex.getMessage());
+        }
+    }
+
+    @Test
+    public void doesAddMovieHandleNoTitleMovie(){
+        try {
+            Movie movie1 = new Movie(new MovieTitle(""), new Director("Ryan Coogler"), new MovieYear("2018"));
+            Library.addMovie(movie1);
+            fail();
+        } catch (NullPointerException ex) {
+            assertEquals("The movie requires a title", ex.getMessage());
+        }
     }
 
 }
