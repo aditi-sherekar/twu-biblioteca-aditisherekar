@@ -32,7 +32,7 @@ public class DisplayBookListTest {
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new DisplayBookList());
 
         String header = "   | Book Title | Author | Publication Year |\n";
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         String bookDetails = "1. | The Great Gatsby | F. Scott Fitzgerald | 1925 |\n";
         Library.addBook(book1);
         Menu.createOptionsList().get(displayNameIndex + 1).excuteOption();

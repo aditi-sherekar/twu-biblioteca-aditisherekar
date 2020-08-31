@@ -1,10 +1,10 @@
 package com.twu.biblioteca;
 
-public class Year {
+public class BookYear {
 
     String year;
 
-    public Year(String number) {
+    public BookYear(String number) {
 
         if (number == ""){
 

@@ -5,9 +5,9 @@ public class Book {
 
     private final Title title;
     private final Author author;
-    private final Year year;
+    private final BookYear year;
 
-    public Book(Title title, Author author, Year year) {
+    public Book(Title title, Author author, BookYear year) {
         this.title = title;
         this.author = author;
         this.year = year;

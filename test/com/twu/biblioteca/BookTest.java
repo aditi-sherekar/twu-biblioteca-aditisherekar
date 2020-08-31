@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class BookTest {
 
-    Book book = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+    Book book = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
 
     @Test
     public void doesGetBookTitleGetCorrectTitle(){

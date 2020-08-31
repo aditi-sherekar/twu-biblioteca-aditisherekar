@@ -4,13 +4,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class YearTest {
+public class BookYearTest {
 
 
     @Test
     public void doesGetYearGetCorrectYear(){
 
-        Year year = new Year("1925");
+        BookYear year = new BookYear("1925");
 
         assertEquals("1925", year.getYear());
 
@@ -19,7 +19,7 @@ public class YearTest {
     @Test
     public void doesGetYearHandleEmptyStringForYear(){
 
-        Year year = new Year("");
+        BookYear year = new BookYear("");
 
         assertEquals("Publication Year Not Given", year.getYear());
     }

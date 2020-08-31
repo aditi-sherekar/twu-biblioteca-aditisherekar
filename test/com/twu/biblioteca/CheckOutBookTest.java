@@ -32,7 +32,7 @@ public class CheckOutBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutBook());
 
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.addBook(book1);
         String input = "Hello";
         CheckOutBook.processBookCheckOut(input);
@@ -46,7 +46,7 @@ public class CheckOutBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutBook());
 
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.addBook(book1);
         String input = "The Great Gatsby";
         CheckOutBook.processBookCheckOut(input);
@@ -58,7 +58,7 @@ public class CheckOutBookTest {
     public void doesCheckOutBookRemoveBookFromLibraryAfterCheckOut(){
 
         ArrayList<Book> bookList = new ArrayList<Book>();
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.addBook(book1);
         String input = "The Great Gatsby";
         CheckOutBook.processBookCheckOut(input);
@@ -70,7 +70,7 @@ public class CheckOutBookTest {
     public void doesCheckOutBookAddBookToCheckedOutBookAfterCheckOut(){
 
         ArrayList<Book> bookList = new ArrayList<Book>();
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         bookList.add(book1);
         Library.addBook(book1);
         String input = "The Great Gatsby";

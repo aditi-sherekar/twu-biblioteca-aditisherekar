@@ -42,7 +42,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.checkedOutBookList.add(book1);
         String input = "The Great Gatsby";
         ReturnBook.processBookReturn(input);
@@ -55,7 +55,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.checkedOutBookList.add(book1);
         String input = "Not The Great Gatsby";
         ReturnBook.processBookReturn(input);
@@ -68,7 +68,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
         ArrayList<Book> bookList = new ArrayList<Book>();
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         bookList.add(book1);
         Library.checkedOutBookList.add(book1);
         String input = "The Great Gatsby";
@@ -82,7 +82,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
         ArrayList<Book> bookList = new ArrayList<Book>();
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.checkedOutBookList.add(book1);
         String input = "The Great Gatsby";
         ReturnBook.processBookReturn(input);

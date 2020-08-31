@@ -14,7 +14,7 @@ public class LibraryTest {
     public void doesBookLibraryReturnListOfBooks(){
 
         ArrayList<Book> bookList = new ArrayList<Book>();
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         bookList.add(book1);
 
         assertEquals(bookList, Library.BookLibrary());
@@ -23,7 +23,7 @@ public class LibraryTest {
     @Test
     public void doesLibraryReturnCorrectBookDetails(){
 
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new Year("1925"));
+        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.addBook(book1);
 
         assertEquals("| The Great Gatsby | F. Scott Fitzgerald | 1925 |\n", Library.getBookDetails());
@@ -47,7 +47,7 @@ public class LibraryTest {
     @Test
     public void doesAddBookHandleNoTitleBook(){
         try {
-            Book book1 = new Book(new Title(""), new Author("F. Scott Fitzgerald"), new Year("1925"));
+            Book book1 = new Book(new Title(""), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
             Library.addBook(book1);
             fail();
         } catch (NullPointerException ex) {
