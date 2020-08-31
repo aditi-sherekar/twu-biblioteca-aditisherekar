@@ -72,6 +72,8 @@ public class BibliotecaApp {
         Book book2 = new Book(new Title("The Headspace Guide to Meditation & Mindfulness"), new Author("Andy Puddicombe"), new Year("2011"));
         Library.addBook(book1);
         Library.addBook(book2);
+        Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
+        Library.addMovie(movie1);
         //Library.addBook(null);
         //Prints Welcome Message
         printWelcomeMessage();

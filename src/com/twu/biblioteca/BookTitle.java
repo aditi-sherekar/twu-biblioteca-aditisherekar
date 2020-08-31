@@ -1,15 +1,15 @@
 package com.twu.biblioteca;
 
-public class Title {
+public class BookTitle {
 
     String title;
 
-    public Title(String name) {
+    public BookTitle(String name) {
 
         this.title = name;
     }
 
-    public String getTitle(){
+    public String getBookTitle(){
 
         return title;
 
