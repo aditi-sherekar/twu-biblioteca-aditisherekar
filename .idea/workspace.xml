@@ -136,23 +136,7 @@
       <command value="git commit -m &quot;Check if incorrect movie title gives unsuccesful return message&quot;" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReturnMovieTest.doesReturnMoviePutMovieBackInLibraryAfterReturn">
-    <configuration name="ReturnMovieTest.doesMenuDisplayCorrectOptionName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca-master" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnMovieTest" />
-      <option name="METHOD_NAME" value="doesMenuDisplayCorrectOptionName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ReturnMovieTest.doesReturnMovieRemoveMovieFromCheckedOutMovieAfterReturn">
     <configuration name="ReturnMovieTest.doesReturnMovieGiveSuccessfulReturnMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
@@ -217,20 +201,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReturnMovieTest.doesReturnMovieRemoveMovieFromCheckedOutMovieAfterReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnMovieTest" />
+      <option name="METHOD_NAME" value="doesReturnMovieRemoveMovieFromCheckedOutMovieAfterReturn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.ReturnMovieTest.doesMenuDisplayCorrectOptionName" />
       <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieHandleIfNoCheckedOutMovies" />
       <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieGiveSuccessfulReturnMessage" />
       <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieGiveUnSuccessfulReturnMessage" />
       <item itemvalue="JUnit.ReturnMovieTest.doesReturnMoviePutMovieBackInLibraryAfterReturn" />
+      <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieRemoveMovieFromCheckedOutMovieAfterReturn" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieRemoveMovieFromCheckedOutMovieAfterReturn" />
         <item itemvalue="JUnit.ReturnMovieTest.doesReturnMoviePutMovieBackInLibraryAfterReturn" />
         <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieGiveUnSuccessfulReturnMessage" />
         <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieGiveSuccessfulReturnMessage" />
         <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieHandleIfNoCheckedOutMovies" />
-        <item itemvalue="JUnit.ReturnMovieTest.doesMenuDisplayCorrectOptionName" />
       </list>
     </recent_temporary>
   </component>

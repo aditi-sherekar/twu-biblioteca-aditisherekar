@@ -77,4 +77,17 @@ public class ReturnMovieTest {
         assertEquals(movieList, Library.MovieLibrary());
     }
 
+    @Test
+    public void doesReturnMovieRemoveMovieFromCheckedOutMovieAfterReturn(){
+
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+        ArrayList<Movie> movieList = new ArrayList<Movie>();
+        Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
+        Library.checkedOutMovieList.add(movie1);
+        String input = "Black Panther";
+        ReturnMovie.processMovieReturn(input);
+
+        assertEquals(movieList, Library.CheckedOutMovie());
+    }
+
 }
