@@ -28,7 +28,7 @@ public class CheckOutMovieTest {
     }
 
     @Test
-    public void doesCheckOutMovieHandleWrongBookTitleEntered() {
+    public void doesCheckOutMovieHandleWrongMovieTitleEntered() {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutMovie());
 
