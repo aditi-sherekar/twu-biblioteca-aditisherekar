@@ -59,10 +59,20 @@ public class LibraryTest {
     public void doesMovieLibraryReturnListOfMovies(){
 
         ArrayList<Movie> movieList = new ArrayList<Movie>();
-        Movie movie1 = new Movie(new Title("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
+        Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         movieList.add(movie1);
 
         assertEquals(movieList, Library.MovieLibrary());
+    }
+
+    @Test
+    public void doesLibraryReturnCorrectMovieDetails(){
+
+        Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
+        Library.addMovie(movie1);
+
+        assertEquals("| Black Panther | Ryan Coogler | 2018 |\n", Library.getMovieDetails());
+
     }
 
     @Test
