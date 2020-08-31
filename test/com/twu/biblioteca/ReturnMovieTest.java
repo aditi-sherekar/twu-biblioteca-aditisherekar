@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -60,6 +61,20 @@ public class ReturnMovieTest {
         ReturnMovie.processMovieReturn(input);
 
         assertEquals("That movie is not valid to return.\n", outContent.toString());
+    }
+
+    @Test
+    public void doesReturnMoviePutMovieBackInLibraryAfterReturn(){
+
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+        ArrayList<Movie> movieList = new ArrayList<Movie>();
+        Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
+        movieList.add(movie1);
+        Library.checkedOutMovieList.add(movie1);
+        String input = "Black Panther";
+        ReturnMovie.processMovieReturn(input);
+
+        assertEquals(movieList, Library.MovieLibrary());
     }
 
 }
