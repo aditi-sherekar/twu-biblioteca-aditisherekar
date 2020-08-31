@@ -39,15 +39,15 @@ public class BibliotecaApp {
                 //if the next token does not match the Integer
                 //regular expression, or is out of range
                 Integer selectedOption = optionSelection.nextInt();
-                if (selectedOption >= 1 && selectedOption <= 4){
+                if (selectedOption >= 1 && selectedOption <= 5){
                     createOptionsList().get(selectedOption - 1).excuteOption();
                     menu.printMenu();
                 }
-                if(selectedOption == 5){
+                if(selectedOption == 6){
                     createOptionsList().get(selectedOption - 1).excuteOption();
                     break;
                 }
-                if(selectedOption <= 0 || selectedOption > 5 ){
+                if(selectedOption <= 0 || selectedOption > 6 ){
                 System.out.println("Please select a valid option!");
                 menu.printMenu();
             }

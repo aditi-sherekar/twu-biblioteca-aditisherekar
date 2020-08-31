@@ -10,7 +10,7 @@ public class CheckOutMovie implements ExcuteOptions{
     @Override
     public String displayOptionName() {
 
-        return "Check-out Movies";
+        return "Check-out Movie";
     }
 
     @Override
@@ -25,10 +25,10 @@ public class CheckOutMovie implements ExcuteOptions{
         selectedOption = optionSelection.nextLine();
 
 
-        processBookCheckOut(selectedOption);
+        processMovieCheckOut(selectedOption);
     }
 
-    public static void processBookCheckOut(String optionSelected){
+    public static void processMovieCheckOut(String optionSelected){
 
         Iterator<Movie> movieIterator = Library.MovieLibrary().iterator();
 

@@ -20,37 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91aabe72-0a77-4654-9fae-9556f271389b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/BibliotecaApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/BibliotecaApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/Library.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/Title.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/Year.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/BookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/BookTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/CheckOutBookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/CheckOutBookTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/DisplayBookListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/DisplayBookListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/LibraryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/MenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/MenuTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/ReturnBookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/ReturnBookTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/TitleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/YearTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BookYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BookYear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/ReturnBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/ReturnBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BookYearTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookYearTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckOutBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckOutBookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/DisplayBookListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/DisplayBookListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/DisplayMovieListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/DisplayMovieListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieYearTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieYearTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ReturnBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/ReturnBookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/TitleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookTitleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutMovie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckedOutMovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckOutMovieTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,15 +118,49 @@
       <command value="git commit -m &quot;Added tests to check if library displays correct movie details&quot;" />
       <command value="git commit -m &quot;Added getMovieDetails() method to Library class&quot;" />
       <command value="git commit -m &quot;Refractor Title to BookTitle&quot;" />
-      <command value="git add -A" />
       <command value="git commit -m &quot;Refractor Year to BookYear&quot;" />
+      <command value="git commit -m &quot;Changes made as per errors for tests&quot;" />
+      <command value="git commit -m &quot;Added CheckedOutMovie wrong movie title entered test&quot;" />
+      <command value="git add -A" />
+      <command value="git commit -m &quot;Added CheckOutMovie Class&quot;" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in TWU_Biblioteca-master">
+  <component name="RunManager" selected="JUnit.CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut">
     <configuration name="All in TWU_Biblioteca-master" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckOutMovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.CheckOutMovieTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.CheckOutMovieTest" />
+      <option name="METHOD_NAME" value="doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -191,51 +196,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca-master" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnBookTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReturnBookTest.doesReturnBookRemoveBookFromCheckedOutBookAfterReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca-master" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnBookTest" />
-      <option name="METHOD_NAME" value="doesReturnBookRemoveBookFromCheckedOutBookAfterReturn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
-      <item itemvalue="JUnit.ReturnBookTest" />
-      <item itemvalue="JUnit.ReturnBookTest.doesReturnBookRemoveBookFromCheckedOutBookAfterReturn" />
       <item itemvalue="JUnit.LibraryTest.doesLibraryReturnCorrectBookDetails" />
       <item itemvalue="JUnit.LibraryTest" />
+      <item itemvalue="JUnit.CheckOutMovieTest" />
+      <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" />
+        <item itemvalue="JUnit.CheckOutMovieTest" />
         <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
         <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.doesLibraryReturnCorrectBookDetails" />
-        <item itemvalue="JUnit.ReturnBookTest" />
-        <item itemvalue="JUnit.ReturnBookTest.doesReturnBookRemoveBookFromCheckedOutBookAfterReturn" />
       </list>
     </recent_temporary>
   </component>
@@ -317,8 +291,8 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="100" y="123" width="1080" height="525" key="DiffContextDialog/0.23.1280.725@0.23.1280.725" timestamp="1592436035209" />
-    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1598842828937">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1598844427941">
+      <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1592443035539" />
     <state width="1280" height="180" key="GridCell.Tab.0.bottom/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041378" />
@@ -330,11 +304,11 @@
     <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1598842828937" />
     <state width="1680" height="600" key="GridCell.Tab.0.bottom/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640350" />
     <state width="1238" height="137" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1595984566107" />
-    <state width="1238" height="137" key="GridCell.Tab.0.bottom/0.23.1280.731@0.23.1280.731" timestamp="1595984253889" />
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.731@0.23.1280.731" timestamp="1598844427940" />
     <state width="1280" height="112" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592385632192" />
     <state width="1638" height="199" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598836307769" />
-    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1598842828934">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1598844427940">
+      <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1592443035538" />
     <state width="1280" height="180" key="GridCell.Tab.0.center/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041377" />
@@ -346,11 +320,11 @@
     <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1598842828934" />
     <state width="1680" height="600" key="GridCell.Tab.0.center/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640348" />
     <state width="1238" height="137" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1595984566106" />
-    <state width="1238" height="137" key="GridCell.Tab.0.center/0.23.1280.731@0.23.1280.731" timestamp="1595984253888" />
+    <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.731@0.23.1280.731" timestamp="1598844427940" />
     <state width="1280" height="112" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592385632187" />
     <state width="1638" height="199" key="GridCell.Tab.0.center/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598836307768" />
-    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1598842828933">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1598844427939">
+      <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1592443035538" />
     <state width="1280" height="180" key="GridCell.Tab.0.left/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041376" />
@@ -362,11 +336,11 @@
     <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1598842828933" />
     <state width="1680" height="600" key="GridCell.Tab.0.left/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640348" />
     <state width="1238" height="137" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1595984566106" />
-    <state width="1238" height="137" key="GridCell.Tab.0.left/0.23.1280.731@0.23.1280.731" timestamp="1595984253885" />
+    <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.731@0.23.1280.731" timestamp="1598844427939" />
     <state width="1280" height="112" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592385632184" />
     <state width="1638" height="199" key="GridCell.Tab.0.left/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598836307767" />
-    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1598842828936">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1598844427940">
+      <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1592443035538" />
     <state width="1280" height="180" key="GridCell.Tab.0.right/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041378" />
@@ -378,7 +352,7 @@
     <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1598842828936" />
     <state width="1680" height="600" key="GridCell.Tab.0.right/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640349" />
     <state width="1238" height="137" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1595984566107" />
-    <state width="1238" height="137" key="GridCell.Tab.0.right/0.23.1280.731@0.23.1280.731" timestamp="1595984253888" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.731@0.23.1280.731" timestamp="1598844427940" />
     <state width="1280" height="112" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1592385632188" />
     <state width="1638" height="199" key="GridCell.Tab.0.right/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598836307768" />
     <state width="1638" height="324" key="GridCell.Tab.1.bottom" timestamp="1598840544031">
@@ -442,8 +416,8 @@
     </state>
     <state x="416" y="158" key="refactoring.ChangeSignatureDialog/0.23.1280.725@0.23.1280.725" timestamp="1592436360324" />
     <state x="416" y="158" key="refactoring.ChangeSignatureDialog/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592349861727" />
-    <state x="1680" y="225" width="880" height="904" key="run.anything.popup" timestamp="1598832642760">
-      <screen x="1280" y="23" width="1680" height="975" />
+    <state x="305" y="174" width="671" height="678" key="run.anything.popup" timestamp="1598844427873">
+      <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state x="305" y="173" width="670" height="672" key="run.anything.popup/0.23.1280.725@0.23.1280.725" timestamp="1592432881264" />
     <state x="305" y="173" width="670" height="673" key="run.anything.popup/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592352041294" />
@@ -454,6 +428,7 @@
     <state x="305" y="174" width="670" height="675" key="run.anything.popup/0.23.1280.729@0.23.1280.729" timestamp="1592293006388" />
     <state x="1680" y="235" width="880" height="953" key="run.anything.popup/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640238" />
     <state x="305" y="174" width="671" height="678" key="run.anything.popup/0.23.1280.730@0.23.1280.730" timestamp="1592389196320" />
+    <state x="305" y="174" width="671" height="678" key="run.anything.popup/0.23.1280.731@0.23.1280.731" timestamp="1598844427873" />
     <state x="1680" y="225" width="880" height="904" key="run.anything.popup/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598832642760" />
     <state x="1680" y="89" width="880" height="910" key="search.everywhere.popup" timestamp="1592451761630">
       <screen x="1280" y="23" width="1680" height="975" />

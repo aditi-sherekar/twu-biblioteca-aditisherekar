@@ -40,5 +40,18 @@ public class CheckOutMovieTest {
         assertEquals("Sorry, that movie is not available!\n", outContent.toString());
     }
 
+    @Test
+    public void doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut(){
+
+        ArrayList<Movie> movieList = new ArrayList<Movie>();
+        Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
+        Library.movieList.clear();
+        Library.addMovie(movie1);
+        String input = "Black Panther";
+        CheckOutMovie.processMovieCheckOut(input);
+
+        assertEquals(movieList, Library.MovieLibrary());
+    }
+
 
 }

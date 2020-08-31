@@ -13,6 +13,7 @@ public class Menu {
         optionsList.add(new DisplayBookList());
         optionsList.add(new DisplayMovieList());
         optionsList.add(new CheckOutBook());
+        optionsList.add(new CheckOutMovie());
         optionsList.add(new ReturnBook());
         optionsList.add(new QuitApp());
 
