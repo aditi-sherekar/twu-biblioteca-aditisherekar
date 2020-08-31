@@ -129,7 +129,7 @@
       <command value="git commit -m &quot;Created Return Movie class&quot;" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReturnMovieTest.doesMenuDisplayCorrectOptionName">
+  <component name="RunManager" selected="JUnit.ReturnMovieTest.doesReturnMovieHandleIfNoCheckedOutMovies">
     <configuration name="All in TWU_Biblioteca-master" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <option name="PACKAGE_NAME" value="" />
@@ -169,22 +169,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca-master" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.CheckOutMovieTest" />
-      <option name="METHOD_NAME" value="doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReturnMovieTest.doesMenuDisplayCorrectOptionName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
@@ -201,20 +185,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReturnMovieTest.doesReturnMovieHandleIfNoCheckedOutMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnMovieTest" />
+      <option name="METHOD_NAME" value="doesReturnMovieHandleIfNoCheckedOutMovies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
       <item itemvalue="JUnit.CheckOutMovieTest" />
-      <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" />
       <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieGiveSuccessfulCheckOutMessage" />
       <item itemvalue="JUnit.ReturnMovieTest.doesMenuDisplayCorrectOptionName" />
+      <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieHandleIfNoCheckedOutMovies" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReturnMovieTest.doesReturnMovieHandleIfNoCheckedOutMovies" />
         <item itemvalue="JUnit.ReturnMovieTest.doesMenuDisplayCorrectOptionName" />
         <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
         <item itemvalue="JUnit.CheckOutMovieTest" />
         <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieGiveSuccessfulCheckOutMessage" />
-        <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" />
       </list>
     </recent_temporary>
   </component>
