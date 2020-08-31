@@ -53,5 +53,19 @@ public class CheckOutMovieTest {
         assertEquals(movieList, Library.MovieLibrary());
     }
 
+    @Test
+    public void doesCheckOutMovieAddMovieToCheckedOutMovieAfterCheckOut(){
+
+        ArrayList<Movie> movieList = new ArrayList<Movie>();
+        Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
+        movieList.add(movie1);
+        Library.movieList.clear();
+        Library.addMovie(movie1);
+        String input = "Black Panther";
+        CheckOutMovie.processMovieCheckOut(input);
+
+        assertEquals(movieList, Library.CheckedOutMovie());
+    }
+
 
 }
