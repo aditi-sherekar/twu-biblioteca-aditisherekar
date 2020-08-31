@@ -66,4 +66,15 @@ public class Library {
     public static CopyOnWriteArrayList<Movie> MovieLibrary() {
         return movieList;
     }
+
+    public static String getMovieDetails() {
+
+        String movieDetails = "";
+
+        for(Movie movie : movieList){
+            movieDetails += ((movieList.indexOf(movie) + 1) + ". " + "| " + movie.getMovieTitle() + " | " + movie.getMovieDirector() + " | " + movie.getMovieYear() + " |\n");
+
+        }
+        return movieDetails;
+    }
 }
