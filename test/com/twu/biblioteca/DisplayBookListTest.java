@@ -32,8 +32,9 @@ public class DisplayBookListTest {
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new DisplayBookList());
 
         String header = "   | Book Title | Author | Publication Year |\n";
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
+        Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         String bookDetails = "1. | The Great Gatsby | F. Scott Fitzgerald | 1925 |\n";
+        Library.bookList.clear();
         Library.addBook(book1);
         Menu.createOptionsList().get(displayNameIndex + 1).excuteOption();
 
@@ -41,11 +42,11 @@ public class DisplayBookListTest {
     }
 
     @Test
-    public void doesDisplayBookListHandleNullBookLibraryError(){
+    public void doesDisplayBookListHandleEmptyBookLibraryError(){
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new DisplayBookList());
         String header = "   | Book Title | Author | Publication Year |\n";
         String bookDetails = "   |      No books available to display      |";
-        Library.addBook(null);
+        Library.bookList.clear();
         Menu.createOptionsList().get(displayNameIndex + 1).excuteOption();
 
         assertEquals(header + bookDetails, outContent.toString());

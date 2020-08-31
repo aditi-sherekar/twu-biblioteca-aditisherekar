@@ -11,6 +11,7 @@ public class Menu {
     public static List<ExcuteOptions> createOptionsList() {
         optionsList = new LinkedList<>();
         optionsList.add(new DisplayBookList());
+        optionsList.add(new DisplayMovieList());
         optionsList.add(new CheckOutBook());
         optionsList.add(new ReturnBook());
         optionsList.add(new QuitApp());

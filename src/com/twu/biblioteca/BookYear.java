@@ -17,7 +17,7 @@ public class BookYear {
     }
 
 
-    public String getYear(){
+    public String getBookYear(){
 
         return this.year;
 

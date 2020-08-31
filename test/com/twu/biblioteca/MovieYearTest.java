@@ -12,7 +12,7 @@ public class MovieYearTest {
 
         MovieYear year = new MovieYear("2018");
 
-        assertEquals("1925", year.getMovieYear());
+        assertEquals("2018", year.getMovieYear());
 
     }
 

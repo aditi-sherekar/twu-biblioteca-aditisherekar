@@ -25,8 +25,6 @@ public class Library {
        // return null;
     }
 
-
-
     public static CopyOnWriteArrayList<Book> BookLibrary(){
 
         return bookList;
@@ -55,7 +53,7 @@ public class Library {
             throw new NullPointerException("The argument cannot be null");
         }
         else if (movie.getMovieTitle() == ""){
-            throw new NullPointerException("The book requires a title");
+            throw new NullPointerException("The movie requires a title");
         }
         else{
             movieList.add(movie);
@@ -75,5 +73,12 @@ public class Library {
 
         }
         return movieDetails;
+    }
+
+
+    public static CopyOnWriteArrayList<Movie> CheckedOutMovie(){
+
+
+        return checkedOutMovieList;
     }
 }

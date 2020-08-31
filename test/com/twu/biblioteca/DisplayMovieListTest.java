@@ -15,7 +15,7 @@ public class DisplayMovieListTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new DisplayMovieList());
 
-        assertEquals("Display Movies", Menu.createOptionsList().get(displayNameIndex + 1).displayOptionName());
+        assertEquals("Display Movies", Menu.createOptionsList().get(displayNameIndex + 2).displayOptionName());
 
     }
 
@@ -35,18 +35,17 @@ public class DisplayMovieListTest {
         Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         String movieDetails = "1. | Black Panther | Ryan Coogler | 2018 |\n";
         Library.addMovie(movie1);
-        Menu.createOptionsList().get(displayNameIndex + 1).excuteOption();
+        Menu.createOptionsList().get(displayNameIndex + 2).excuteOption();
 
         assertEquals(header + movieDetails, outContent.toString());
     }
 
     @Test
-    public void doesDisplayMovieListHandleNullMovieLibraryError(){
+    public void doesDisplayMovieListHandleEmptyMovieLibraryError(){
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new DisplayMovieList());
         String header = "   | Movie Title | Director | Release Year |\n";
         String movieDetails = "   |      No movies available to display      |";
-        Library.addMovie(null);
-        Menu.createOptionsList().get(displayNameIndex + 1).excuteOption();
+        Menu.createOptionsList().get(displayNameIndex + 2).excuteOption();
 
         assertEquals(header + movieDetails, outContent.toString());
     }

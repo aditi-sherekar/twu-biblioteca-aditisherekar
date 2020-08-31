@@ -23,7 +23,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        assertEquals("Return Books", Menu.createOptionsList().get(displayNameIndex + 3).displayOptionName());
+        assertEquals("Return Books", Menu.createOptionsList().get(displayNameIndex + 4).displayOptionName());
 
     }
 
@@ -32,7 +32,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        Menu.createOptionsList().get(displayNameIndex + 3).excuteOption();
+        Menu.createOptionsList().get(displayNameIndex + 4).excuteOption();
 
         assertEquals("There are no books to be returned.\n", outContent.toString());
     }
@@ -42,7 +42,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
+        Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.checkedOutBookList.add(book1);
         String input = "The Great Gatsby";
         ReturnBook.processBookReturn(input);
@@ -55,7 +55,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
+        Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.checkedOutBookList.add(book1);
         String input = "Not The Great Gatsby";
         ReturnBook.processBookReturn(input);
@@ -68,7 +68,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
         ArrayList<Book> bookList = new ArrayList<Book>();
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
+        Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         bookList.add(book1);
         Library.checkedOutBookList.add(book1);
         String input = "The Great Gatsby";
@@ -82,7 +82,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
         ArrayList<Book> bookList = new ArrayList<Book>();
-        Book book1 = new Book(new Title("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
+        Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.checkedOutBookList.add(book1);
         String input = "The Great Gatsby";
         ReturnBook.processBookReturn(input);

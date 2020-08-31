@@ -4,15 +4,15 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TitleTest {
+public class BookTitleTest {
 
 
     @Test
     public void doesGetTitleGetCorrectTitle(){
 
-        Title title = new Title("The Great Gatsby");
+        BookTitle title = new BookTitle("The Great Gatsby");
 
-        assertEquals("The Great Gatsby", title.getTitle());
+        assertEquals("The Great Gatsby", title.getBookTitle());
 
     }
 

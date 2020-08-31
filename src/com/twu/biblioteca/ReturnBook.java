@@ -18,6 +18,7 @@ public class ReturnBook implements ExcuteOptions {
 
         if(Library.CheckedOutBook().size() == 0){
             System.out.println("There are no books to be returned.");
+
         }
         else{
             System.out.println("Please enter the book you wish to return:");
@@ -39,7 +40,7 @@ public class ReturnBook implements ExcuteOptions {
                 Library.BookLibrary().add(book);
                 Library.CheckedOutBook().remove(book);
                 System.out.println("Thank you for returning the book.");
-                return;
+
             }
             else if (!book.getBookTitle().matches(optionSelected) && checkOutBookIterator.hasNext()) {
 

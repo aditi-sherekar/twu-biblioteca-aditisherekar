@@ -12,7 +12,7 @@ public class BookYearTest {
 
         BookYear year = new BookYear("1925");
 
-        assertEquals("1925", year.getYear());
+        assertEquals("1925", year.getBookYear());
 
     }
 
@@ -21,6 +21,6 @@ public class BookYearTest {
 
         BookYear year = new BookYear("");
 
-        assertEquals("Publication Year Not Given", year.getYear());
+        assertEquals("Publication Year Not Given", year.getBookYear());
     }
 }

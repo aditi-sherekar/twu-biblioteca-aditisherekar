@@ -3,11 +3,11 @@ package com.twu.biblioteca;
 public class Book {
 
 
-    private final Title title;
+    private final BookTitle title;
     private final Author author;
     private final BookYear year;
 
-    public Book(Title title, Author author, BookYear year) {
+    public Book(BookTitle title, Author author, BookYear year) {
         this.title = title;
         this.author = author;
         this.year = year;
@@ -15,7 +15,7 @@ public class Book {
 
     public String getBookTitle() {
 
-        return this.title.getTitle();
+        return this.title.getBookTitle();
     }
 
     public String getBookAuthor() {
@@ -24,7 +24,7 @@ public class Book {
 
     public String getBookYear() {
 
-        return this.year.getYear();
+        return this.year.getBookYear();
     }
 
 
