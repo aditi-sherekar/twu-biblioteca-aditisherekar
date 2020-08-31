@@ -49,5 +49,17 @@ public class ReturnMovieTest {
         assertEquals("Thank you for returning the movie.\n", outContent.toString());
     }
 
+    @Test
+    public void doesReturnMovieGiveUnSuccessfulReturnMessage(){
+
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+
+        Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
+        Library.checkedOutMovieList.add(movie1);
+        String input = "Not Black Panther";
+        ReturnMovie.processMovieReturn(input);
+
+        assertEquals("That movie is not valid to return.\n", outContent.toString());
+    }
 
 }
