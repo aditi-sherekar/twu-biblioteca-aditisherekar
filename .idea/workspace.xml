@@ -126,7 +126,7 @@
       <command value="git commit -m &quot;Added test to check if movie is added to checkout list of movies after check out&quot;" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CheckOutMovieTest.doesCheckOutMovieGiveSuccessfulCheckOutMessage">
+  <component name="RunManager" selected="JUnit.All in TWU_Biblioteca-master">
     <configuration name="All in TWU_Biblioteca-master" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <option name="PACKAGE_NAME" value="" />
@@ -206,10 +206,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
+        <item itemvalue="JUnit.CheckOutMovieTest" />
         <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieGiveSuccessfulCheckOutMessage" />
         <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" />
-        <item itemvalue="JUnit.CheckOutMovieTest" />
-        <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
         <item itemvalue="JUnit.LibraryTest" />
       </list>
     </recent_temporary>

@@ -16,7 +16,7 @@ public class CheckOutMovieTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutMovie());
 
-        assertEquals("Check-out Movie", Menu.createOptionsList().get(displayNameIndex + 4).displayOptionName());
+        assertEquals("Check-out Movies", Menu.createOptionsList().get(displayNameIndex + 4).displayOptionName());
 
     }
 

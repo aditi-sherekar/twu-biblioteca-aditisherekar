@@ -30,8 +30,9 @@ public class MenuTest {
                 "1. Display Books\n" +
                 "2. Display Movies\n" +
                 "3. Check-out Books\n" +
-                "4. Return Books\n" +
-                "5. Exit\n" +
+                "4. Check-out Movies\n" +
+                "5. Return Books\n" +
+                "6. Exit\n" +
                 "\nPlease select an option from above:\n", outContent.toString());
 
     }

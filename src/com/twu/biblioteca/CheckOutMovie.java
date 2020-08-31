@@ -10,7 +10,7 @@ public class CheckOutMovie implements ExcuteOptions{
     @Override
     public String displayOptionName() {
 
-        return "Check-out Movie";
+        return "Check-out Movies";
     }
 
     @Override

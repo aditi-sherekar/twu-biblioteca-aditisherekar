@@ -23,7 +23,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        assertEquals("Return Books", Menu.createOptionsList().get(displayNameIndex + 4).displayOptionName());
+        assertEquals("Return Books", Menu.createOptionsList().get(displayNameIndex + 5).displayOptionName());
 
     }
 
@@ -32,7 +32,7 @@ public class ReturnBookTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        Menu.createOptionsList().get(displayNameIndex + 4).excuteOption();
+        Menu.createOptionsList().get(displayNameIndex + 5).excuteOption();
 
         assertEquals("There are no books to be returned.\n", outContent.toString());
     }
