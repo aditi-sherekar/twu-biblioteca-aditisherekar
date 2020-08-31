@@ -26,5 +26,15 @@ public class ReturnMovieTest {
 
     }
 
+    @Test
+    public void doesReturnMovieHandleIfNoCheckedOutMovies(){
+
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+
+        Menu.createOptionsList().get(displayNameIndex + 6).excuteOption();
+
+        assertEquals("There are no movies to be returned.\n", outContent.toString());
+    }
+
 
 }
