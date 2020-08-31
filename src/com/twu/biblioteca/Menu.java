@@ -15,6 +15,7 @@ public class Menu {
         optionsList.add(new CheckOutBook());
         optionsList.add(new CheckOutMovie());
         optionsList.add(new ReturnBook());
+        optionsList.add(new ReturnMovie());
         optionsList.add(new QuitApp());
 
         return optionsList;

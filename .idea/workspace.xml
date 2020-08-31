@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91aabe72-0a77-4654-9fae-9556f271389b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckOutMovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckOutMovieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/ReturnMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/ReturnMovie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,11 +122,14 @@
       <command value="git commit -m &quot;Added CheckedOutMovie wrong movie title entered test&quot;" />
       <command value="git commit -m &quot;Added CheckOutMovie Class&quot;" />
       <command value="git commit -m &quot;Added test to check if movie is removed from movie library after being checked out&quot;" />
-      <command value="git add -A" />
       <command value="git commit -m &quot;Added test to check if movie is added to checkout list of movies after check out&quot;" />
+      <command value="git commit -m &quot;Added test to check if success message is printed after checking out movie&quot;" />
+      <command value="git commit -m &quot;Added test to check is the correct display name for Return Books is printed&quot;" />
+      <command value="git add -A" />
+      <command value="git commit -m &quot;Created Return Movie class&quot;" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in TWU_Biblioteca-master">
+  <component name="RunManager" selected="JUnit.ReturnMovieTest.doesMenuDisplayCorrectOptionName">
     <configuration name="All in TWU_Biblioteca-master" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <option name="PACKAGE_NAME" value="" />
@@ -182,7 +185,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReturnMovieTest.doesMenuDisplayCorrectOptionName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -191,26 +194,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibraryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnMovieTest" />
+      <option name="METHOD_NAME" value="doesMenuDisplayCorrectOptionName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
-      <item itemvalue="JUnit.LibraryTest" />
       <item itemvalue="JUnit.CheckOutMovieTest" />
       <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" />
       <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieGiveSuccessfulCheckOutMessage" />
+      <item itemvalue="JUnit.ReturnMovieTest.doesMenuDisplayCorrectOptionName" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReturnMovieTest.doesMenuDisplayCorrectOptionName" />
         <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
         <item itemvalue="JUnit.CheckOutMovieTest" />
         <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieGiveSuccessfulCheckOutMessage" />
         <item itemvalue="JUnit.CheckOutMovieTest.doesCheckOutMovieRemoveMovieFromLibraryAfterCheckOut" />
-        <item itemvalue="JUnit.LibraryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,8 +255,8 @@
     </state>
     <state x="104" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.726@0.23.1280.726" timestamp="1592290319398" />
     <state x="1417" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.729/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592475505448" />
-    <state x="100" y="124" width="1081" height="529" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598842641554">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state x="100" y="124" width="1081" height="531" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598845618256">
+      <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state x="100" y="123" width="1080" height="525" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1280.725@0.23.1280.725" timestamp="1592432847868" />
     <state x="1411" y="165" width="1418" height="744" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1280.726/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592538290867" />
@@ -260,11 +264,13 @@
     <state x="1411" y="165" width="1418" height="744" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592470388013" />
     <state x="1411" y="165" width="1418" height="744" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1280.729/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592473810249" />
     <state x="100" y="124" width="1081" height="529" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1280.729@0.23.1280.729" timestamp="1598842641554" />
+    <state x="100" y="124" width="1081" height="531" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1280.731@0.23.1280.731" timestamp="1598845618256" />
     <state x="1411" y="158" width="1418" height="707" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598836553991" />
-    <state x="1933" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1598828840581">
-      <screen x="1280" y="23" width="1680" height="1027" />
+    <state x="498" y="181" key="#com.intellij.ide.util.MemberChooser" timestamp="1598845579947">
+      <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state x="1933" y="250" key="#com.intellij.ide.util.MemberChooser/0.23.1280.728/1280.23.1680.1027@1280.23.1680.1027" timestamp="1598828840581" />
+    <state x="498" y="181" key="#com.intellij.ide.util.MemberChooser/0.23.1280.731@0.23.1280.731" timestamp="1598845579947" />
     <state x="378" y="168" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1592299967329">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
@@ -292,7 +298,7 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="100" y="123" width="1080" height="525" key="DiffContextDialog/0.23.1280.725@0.23.1280.725" timestamp="1592436035209" />
-    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1598844927740">
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1598845606676">
       <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1592443035539" />
@@ -305,10 +311,10 @@
     <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1598842828937" />
     <state width="1680" height="600" key="GridCell.Tab.0.bottom/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640350" />
     <state width="1238" height="137" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1595984566107" />
-    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.731@0.23.1280.731" timestamp="1598844927740" />
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.731@0.23.1280.731" timestamp="1598845606676" />
     <state width="1280" height="112" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592385632192" />
     <state width="1638" height="199" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598836307769" />
-    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1598844927739">
+    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1598845606674">
       <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1592443035538" />
@@ -321,10 +327,10 @@
     <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1598842828934" />
     <state width="1680" height="600" key="GridCell.Tab.0.center/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640348" />
     <state width="1238" height="137" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1595984566106" />
-    <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.731@0.23.1280.731" timestamp="1598844927739" />
+    <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.731@0.23.1280.731" timestamp="1598845606674" />
     <state width="1280" height="112" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592385632187" />
     <state width="1638" height="199" key="GridCell.Tab.0.center/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598836307768" />
-    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1598844927739">
+    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1598845606673">
       <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1592443035538" />
@@ -337,10 +343,10 @@
     <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1598842828933" />
     <state width="1680" height="600" key="GridCell.Tab.0.left/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640348" />
     <state width="1238" height="137" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1595984566106" />
-    <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.731@0.23.1280.731" timestamp="1598844927739" />
+    <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.731@0.23.1280.731" timestamp="1598845606673" />
     <state width="1280" height="112" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592385632184" />
     <state width="1638" height="199" key="GridCell.Tab.0.left/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598836307767" />
-    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1598844927740">
+    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1598845606675">
       <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state width="1238" height="216" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1592443035538" />
@@ -353,7 +359,7 @@
     <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1598842828936" />
     <state width="1680" height="600" key="GridCell.Tab.0.right/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640349" />
     <state width="1238" height="137" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1595984566107" />
-    <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.731@0.23.1280.731" timestamp="1598844927740" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.731@0.23.1280.731" timestamp="1598845606675" />
     <state width="1280" height="112" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1592385632188" />
     <state width="1638" height="199" key="GridCell.Tab.0.right/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598836307768" />
     <state width="1638" height="324" key="GridCell.Tab.1.bottom" timestamp="1598840544031">
@@ -417,7 +423,7 @@
     </state>
     <state x="416" y="158" key="refactoring.ChangeSignatureDialog/0.23.1280.725@0.23.1280.725" timestamp="1592436360324" />
     <state x="416" y="158" key="refactoring.ChangeSignatureDialog/0.23.1280.726/1280.23.1680.1027@0.23.1280.726" timestamp="1592349861727" />
-    <state x="305" y="174" width="671" height="678" key="run.anything.popup" timestamp="1598844927673">
+    <state x="305" y="174" width="671" height="678" key="run.anything.popup" timestamp="1598845606609">
       <screen x="0" y="23" width="1280" height="731" />
     </state>
     <state x="305" y="173" width="670" height="672" key="run.anything.popup/0.23.1280.725@0.23.1280.725" timestamp="1592432881264" />
@@ -429,7 +435,7 @@
     <state x="305" y="174" width="670" height="675" key="run.anything.popup/0.23.1280.729@0.23.1280.729" timestamp="1592293006388" />
     <state x="1680" y="235" width="880" height="953" key="run.anything.popup/0.23.1280.730/1280.23.1680.1027@1280.23.1680.1027" timestamp="1592354640238" />
     <state x="305" y="174" width="671" height="678" key="run.anything.popup/0.23.1280.730@0.23.1280.730" timestamp="1592389196320" />
-    <state x="305" y="174" width="671" height="678" key="run.anything.popup/0.23.1280.731@0.23.1280.731" timestamp="1598844927673" />
+    <state x="305" y="174" width="671" height="678" key="run.anything.popup/0.23.1280.731@0.23.1280.731" timestamp="1598845606609" />
     <state x="1680" y="225" width="880" height="904" key="run.anything.popup/0.23.1280.777/1280.23.1680.975@1280.23.1680.975" timestamp="1598832642760" />
     <state x="1680" y="89" width="880" height="910" key="search.everywhere.popup" timestamp="1592451761630">
       <screen x="1280" y="23" width="1680" height="975" />
