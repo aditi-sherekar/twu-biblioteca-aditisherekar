@@ -3,10 +3,11 @@ package com.twu.biblioteca;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static com.twu.biblioteca.Menu.createOptionsList;
+import static com.twu.biblioteca.Menu.optionsList;
 
 public class BibliotecaApp {
 
+    private static User user;
     private final Library library;
     private final Menu menu;
 
@@ -39,15 +40,15 @@ public class BibliotecaApp {
                 //if the next token does not match the Integer
                 //regular expression, or is out of range
                 Integer selectedOption = optionSelection.nextInt();
-                if (selectedOption >= 1 && selectedOption <= 5){
-                    createOptionsList().get(selectedOption - 1).excuteOption();
+                if (selectedOption >= 1 && selectedOption <= 8){
+                    optionsList.get(selectedOption - 1).excuteOption();
                     menu.printMenu();
                 }
-                if(selectedOption == 6){
-                    createOptionsList().get(selectedOption - 1).excuteOption();
+                if(selectedOption == 9){
+                    optionsList.get(selectedOption - 1).excuteOption();
                     break;
                 }
-                if(selectedOption <= 0 || selectedOption > 6 ){
+                if(selectedOption <= 0 || selectedOption > 9 ){
                 System.out.println("Please select a valid option!");
                 menu.printMenu();
             }
@@ -74,7 +75,7 @@ public class BibliotecaApp {
         Library.addBook(book2);
         Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         Library.addMovie(movie1);
-        User user1 = new User(new LibraryNumber("123-4567"), new Password("Password"));
+        User user1 = new User("123-4567", "Password", "Full Name", "fullname@outlook.com", "08001234567", User.userBookList);
         Library.addUser(user1);
         //Library.addBook(null);
         //Prints Welcome Message

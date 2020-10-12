@@ -11,24 +11,31 @@ public class CheckOutBook implements ExcuteOptions {
     public String displayOptionName() {
 
         return "Check-out Books";
+
     }
 
 
     @Override
     public void excuteOption()  {
 
-        UserLogin.getUserInput();
+        if (UserLogin.isLoggedIn == true) {
+            System.out.println("   | Book Title | Author | Publication Year |");
+            if (Library.BookLibrary().size() != 0){
+                System.out.print(Library.getBookDetails());
+                System.out.println("Please select the book you wish to check-out:");
+                Scanner optionSelection = new Scanner(System.in);
+                selectedOption = optionSelection.nextLine();
+                processBookCheckOut(selectedOption);
+            }
+            else{
+                System.out.println("   |      No books available to check-out      |");
+            }
 
-        System.out.println("   | Book Title | Author | Publication Year |");
-        System.out.println(Library.getBookDetails());
-
-        System.out.println("Please select the book you wish to check-out:");
-
-        Scanner optionSelection = new Scanner(System.in);
-        selectedOption = optionSelection.nextLine();
-
-
-        processBookCheckOut(selectedOption);
+        }
+        else{
+            UserLogin.getUserInput();
+            excuteOption();
+        }
 
     }
 
@@ -40,9 +47,11 @@ public class CheckOutBook implements ExcuteOptions {
             Book book = bookIterator.next();
             if (book.getBookTitle().matches(optionSelected)) {
                 Library.BookLibrary().remove(book);
+                User.addUserBooks(book);
                 Library.CheckedOutBook().add(book);
                 System.out.println("Thank you! Enjoy the book!");
                 return;
+
             } else if (!book.getBookTitle().matches(optionSelected) && bookIterator.hasNext()) {
 
                 continue;

@@ -14,9 +14,9 @@ public class CheckOutMovieTest {
     @Test
     public void doesMenuDisplayCorrectOptionName() {
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutMovie());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new CheckOutMovie());
 
-        assertEquals("Check-out Movies", Menu.createOptionsList().get(displayNameIndex + 4).displayOptionName());
+        assertEquals("Check-out Movies", Menu.optionsList.get(displayNameIndex + 4).displayOptionName());
 
     }
 
@@ -30,7 +30,7 @@ public class CheckOutMovieTest {
     @Test
     public void doesCheckOutMovieHandleWrongMovieTitleEntered() {
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutMovie());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new CheckOutMovie());
 
         Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         Library.addMovie(movie1);
@@ -43,7 +43,7 @@ public class CheckOutMovieTest {
     @Test
     public void doesCheckOutMovieGiveSuccessfulCheckOutMessage(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutMovie());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new CheckOutMovie());
 
         Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         Library.addMovie(movie1);

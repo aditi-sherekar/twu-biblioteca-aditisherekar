@@ -10,6 +10,7 @@ public class Library {
     static CopyOnWriteArrayList<Movie> movieList = new CopyOnWriteArrayList<Movie>();
     static CopyOnWriteArrayList<Movie> checkedOutMovieList = new CopyOnWriteArrayList<Movie>();
     static CopyOnWriteArrayList<User> userList = new CopyOnWriteArrayList<User>();
+    static CopyOnWriteArrayList<User> userLoggedInList = new CopyOnWriteArrayList<User>();
 
     public static void addBook(Book book) {
 
@@ -120,6 +121,55 @@ public class Library {
 
     public static CopyOnWriteArrayList<User> UserLibrary() {
         return userList;
+
+    }
+
+    public static CopyOnWriteArrayList<User> UserLoggedInLibrary() {
+        return userLoggedInList;
+
+    }
+
+    public static String getUserName() {
+        String userName = "";
+
+        for(User user : userList){
+            userName = user.getName();
+
+        }
+        return userName;
+    }
+
+    public static String getEmail() {
+        String userEmail = "";
+
+        for(User user : userList){
+            userEmail = user.getEmail();
+
+        }
+        return userEmail;
+    }
+
+    public static String getPhoneNumber() {
+
+        String userPhoneNumber = "";
+
+        for(User user : userList){
+            userPhoneNumber = user.getPhoneNumber();
+
+        }
+        return userPhoneNumber;
+
+    }
+
+    public static CopyOnWriteArrayList<Book> getBooks() {
+
+        CopyOnWriteArrayList<Book> userBooks = null;
+
+        for(User user : userList){
+            userBooks = user.getUserBooks();
+
+        }
+        return userBooks;
 
     }
 }

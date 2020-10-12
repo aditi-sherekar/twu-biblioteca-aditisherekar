@@ -14,9 +14,9 @@ public class CheckOutBookTest {
     @Test
     public void doesMenuDisplayCorrectOptionName(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutBook());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new CheckOutBook());
 
-        assertEquals("Check-out Books", Menu.createOptionsList().get(displayNameIndex + 3).displayOptionName());
+        assertEquals("Check-out Books", Menu.optionsList.get(displayNameIndex + 3).displayOptionName());
 
     }
 
@@ -30,7 +30,7 @@ public class CheckOutBookTest {
     @Test
     public void doesCheckOutBookHandleWrongBookTitleEntered(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutBook());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new CheckOutBook());
 
         Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.addBook(book1);
@@ -44,7 +44,7 @@ public class CheckOutBookTest {
     @Test
     public void doesCheckOutBookGiveSuccessfulCheckOutMessage(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new CheckOutBook());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new CheckOutBook());
 
         Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.addBook(book1);

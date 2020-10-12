@@ -21,18 +21,18 @@ public class ReturnMovieTest {
     @Test
     public void doesMenuDisplayCorrectOptionName(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnMovie());
 
-        assertEquals("Return Movies", Menu.createOptionsList().get(displayNameIndex + 6).displayOptionName());
+        assertEquals("Return Movies", Menu.optionsList.get(displayNameIndex + 6).displayOptionName());
 
     }
 
     @Test
     public void doesReturnMovieHandleIfNoCheckedOutMovies(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnMovie());
 
-        Menu.createOptionsList().get(displayNameIndex + 6).excuteOption();
+        Menu.optionsList.get(displayNameIndex + 6).excuteOption();
 
         assertEquals("There are no movies to be returned.\n", outContent.toString());
     }
@@ -40,7 +40,7 @@ public class ReturnMovieTest {
     @Test
     public void doesReturnMovieGiveSuccessfulReturnMessage(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnMovie());
 
         Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         Library.checkedOutMovieList.add(movie1);
@@ -53,7 +53,7 @@ public class ReturnMovieTest {
     @Test
     public void doesReturnMovieGiveUnSuccessfulReturnMessage(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnMovie());
 
         Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         Library.checkedOutMovieList.add(movie1);
@@ -66,7 +66,7 @@ public class ReturnMovieTest {
     @Test
     public void doesReturnMoviePutMovieBackInLibraryAfterReturn(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnMovie());
         ArrayList<Movie> movieList = new ArrayList<Movie>();
         Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         movieList.add(movie1);
@@ -80,7 +80,7 @@ public class ReturnMovieTest {
     @Test
     public void doesReturnMovieRemoveMovieFromCheckedOutMovieAfterReturn(){
 
-        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnMovie());
+        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnMovie());
         ArrayList<Movie> movieList = new ArrayList<Movie>();
         Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         Library.checkedOutMovieList.add(movie1);

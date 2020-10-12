@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class UserLogin {
 
+    public static boolean isLoggedIn = false;
+
     public static void getUserInput(){
         String numberUserInput = "";
         String passwordUserInput = "";
@@ -28,12 +30,27 @@ public class UserLogin {
         while(userIterator.hasNext()) {
             User user = userIterator.next();
             if ((user.getLibraryNumber().matches(numberUserInput)) && (user.getPassword().matches(passwordUserInput))) {
+                isLoggedIn = true;
+                Library.userLoggedInList.add(user);
                 continue;
+
             }
             else{
                 System.out.println("Sorry, the library number or password entered was incorrect. Please try again.");
                 BibliotecaApp.printProgrammeMenu();
             }
         }
+    }
+
+    public static void addMenuOption(){
+        if(isLoggedIn == true){
+            Menu.optionsList.remove(6);
+            Menu.optionsList.add(new UserDetails());
+            Menu.optionsList.add(new Logout());
+        }
+        else{
+            return;
+        }
+
     }
 }

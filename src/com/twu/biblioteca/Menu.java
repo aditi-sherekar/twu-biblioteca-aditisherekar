@@ -5,17 +5,20 @@ import java.util.List;
 
 public class Menu {
 
-    private static List<ExcuteOptions> optionsList;
+    public static List<ExcuteOptions> optionsList;
 
 
     public static List<ExcuteOptions> createOptionsList() {
         optionsList = new LinkedList<>();
+
         optionsList.add(new DisplayBookList());
         optionsList.add(new DisplayMovieList());
         optionsList.add(new CheckOutBook());
         optionsList.add(new CheckOutMovie());
         optionsList.add(new ReturnBook());
         optionsList.add(new ReturnMovie());
+        optionsList.add(new Login());
+        UserLogin.addMenuOption();
         optionsList.add(new QuitApp());
 
         return optionsList;
