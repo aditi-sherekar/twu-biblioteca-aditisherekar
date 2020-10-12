@@ -13,8 +13,11 @@ public class CheckOutBook implements ExcuteOptions {
         return "Check-out Books";
     }
 
+
     @Override
     public void excuteOption()  {
+
+        UserLogin.getUserInput();
 
         System.out.println("   | Book Title | Author | Publication Year |");
         System.out.println(Library.getBookDetails());

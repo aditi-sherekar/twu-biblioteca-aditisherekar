@@ -9,6 +9,7 @@ public class Library {
     static CopyOnWriteArrayList<Book> checkedOutBookList = new CopyOnWriteArrayList<Book>();
     static CopyOnWriteArrayList<Movie> movieList = new CopyOnWriteArrayList<Movie>();
     static CopyOnWriteArrayList<Movie> checkedOutMovieList = new CopyOnWriteArrayList<Movie>();
+    static CopyOnWriteArrayList<User> userList = new CopyOnWriteArrayList<User>();
 
     public static void addBook(Book book) {
 
@@ -80,5 +81,45 @@ public class Library {
 
 
         return checkedOutMovieList;
+    }
+
+    public static void addUser(User user) {
+
+        if (user == null){
+            throw new NullPointerException("The argument cannot be null");
+        }
+        else if (user.getLibraryNumber() == "" || user.getPassword() == "" ){
+            throw new NullPointerException("The movie requires a username and/or password");
+        }
+        else{
+            userList.add(user);
+        }
+    }
+
+    public static String getUserLibraryNumber(){
+
+        String userLibraryNumber = "";
+
+        for(User user : userList){
+            userLibraryNumber = user.getLibraryNumber();
+
+        }
+        return userLibraryNumber;
+    }
+
+    public static String getUserPassword(){
+
+        String userPassword = "";
+
+        for(User user : userList){
+            userPassword = user.getPassword();
+
+        }
+        return userPassword;
+    }
+
+    public static CopyOnWriteArrayList<User> UserLibrary() {
+        return userList;
+
     }
 }
