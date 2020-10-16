@@ -34,33 +34,60 @@ public class BibliotecaApp {
         while (true){
             Scanner optionSelection = new Scanner(System.in);
 
-            try
-            {
-                //nextInt will throw InputMismatchException
-                //if the next token does not match the Integer
-                //regular expression, or is out of range
-                Integer selectedOption = optionSelection.nextInt();
-                if (selectedOption >= 1 && selectedOption <= 8){
-                    optionsList.get(selectedOption - 1).excuteOption();
+            if (UserLogin.isLoggedIn == true){
+                try
+                {
+                    //nextInt will throw InputMismatchException
+                    //if the next token does not match the Integer
+                    //regular expression, or is out of range
+                    Integer selectedOption = optionSelection.nextInt();
+                    if (selectedOption >= 1 && selectedOption <= 9){
+                        optionsList.get(selectedOption - 1).excuteOption();
+                        menu.printMenu();
+                    }
+                    if(selectedOption <= 0 || selectedOption > 9 ){
+                        System.out.println("Please select a valid option!");
+                        menu.printMenu();
+                    }
+
+                }
+                catch(InputMismatchException exception)
+                {
+                    //Print "This is not an integer"
+                    //when user put other than integer
+                    System.out.println("This is not an integer, try again!");
                     menu.printMenu();
                 }
-                if(selectedOption == 9){
-                    optionsList.get(selectedOption - 1).excuteOption();
-                    break;
-                }
-                if(selectedOption <= 0 || selectedOption > 9 ){
-                System.out.println("Please select a valid option!");
-                menu.printMenu();
             }
+            else{
+                try
+                {
+                    //nextInt will throw InputMismatchException
+                    //if the next token does not match the Integer
+                    //regular expression, or is out of range
+                    Integer selectedOption = optionSelection.nextInt();
+                    if (selectedOption >= 1 && selectedOption <= 8){
+                        optionsList.get(selectedOption - 1).excuteOption();
+                        menu.printMenu();
+                    }
+                    if(selectedOption <= 0 || selectedOption > 8 ){
+                        System.out.println("Please select a valid option!");
+                        menu.printMenu();
+                    }
+
+                }
+                catch(InputMismatchException exception)
+                {
+                    //Print "This is not an integer"
+                    //when user put other than integer
+                    System.out.println("This is not an integer, try again!");
+                    menu.printMenu();
+                }
+
 
             }
-            catch(InputMismatchException exception)
-            {
-                //Print "This is not an integer"
-                //when user put other than integer
-                System.out.println("This is not an integer, try again!");
-                menu.printMenu();
-            }
+
+
 
 
         }
