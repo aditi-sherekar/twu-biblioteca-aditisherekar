@@ -16,23 +16,30 @@ public class ReturnBook implements ExcuteOptions {
     @Override
     public void excuteOption() {
 
-        if(Library.CheckedOutBook().size() == 0){
-            System.out.println("There are no books to be returned.");
+        if (UserLogin.isLoggedIn == true) {
+            if(Library.CheckedOutBook().size() == 0){
+                System.out.println("There are no books to be returned.");
+
+            }
+            else{
+                System.out.println("Please enter the book you wish to return:");
+                Scanner optionSelection = new Scanner(System.in);
+                String selectedOption = optionSelection.nextLine();
+
+                processBookReturn(selectedOption);
+            }
 
         }
         else{
-            System.out.println("Please enter the book you wish to return:");
-            Scanner optionSelection = new Scanner(System.in);
-            String selectedOption = optionSelection.nextLine();
-
-            processBookReturn(selectedOption);
+            UserLogin.getUserInput();
+            excuteOption();
         }
 
     }
 
     public static void processBookReturn(String optionSelected){
 
-        Iterator<Book> checkOutBookIterator = Library.CheckedOutBook().iterator();
+        Iterator<Book> checkOutBookIterator = User.userBookList.iterator();
 
         while(checkOutBookIterator.hasNext()){
             Book book = checkOutBookIterator.next();

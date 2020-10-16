@@ -14,6 +14,6 @@ public class QuitApp implements ExcuteOptions {
 
         System.out.println("You are now exiting the program: Goodbye!");
 
-
     }
+
 }
