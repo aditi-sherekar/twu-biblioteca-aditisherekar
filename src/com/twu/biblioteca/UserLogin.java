@@ -53,15 +53,4 @@ public class UserLogin implements ExcuteOptions {
         }
     }
 
-    public static void addMenuOption(){
-        if(isLoggedIn == true){
-            Menu.optionsList.remove(6);
-            Menu.optionsList.add(new UserDetails());
-            Menu.optionsList.add(new Logout());
-        }
-        else{
-            return;
-        }
-
-    }
 }

@@ -18,10 +18,22 @@ public class Menu {
         optionsList.add(new ReturnBook());
         optionsList.add(new ReturnMovie());
         optionsList.add(new UserLogin());
-        UserLogin.addMenuOption();
+        addMenuOption();
         optionsList.add(new QuitApp());
 
         return optionsList;
+    }
+
+    public static void addMenuOption(){
+        if(UserLogin.isLoggedIn == true){
+            Menu.optionsList.remove(6);
+            Menu.optionsList.add(new UserDetails());
+            Menu.optionsList.add(new Logout());
+        }
+        else{
+            return;
+        }
+
     }
 
 

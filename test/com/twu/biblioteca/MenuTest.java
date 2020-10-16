@@ -24,7 +24,8 @@ public class MenuTest {
     }
 
     @Test
-    public void displaysMenu(){
+    public void displaysLoggedOutMenu(){
+        UserLogin.isLoggedIn = false;
         Menu.printMenu();
         assertEquals("\n---------Menu---------\n" +
                 "1. Display Books\n" +
@@ -32,8 +33,28 @@ public class MenuTest {
                 "3. Check-out Books\n" +
                 "4. Check-out Movies\n" +
                 "5. Return Books\n" +
+                "6. Return Movies\n" +
                 "7. Login\n" +
-                "6. Exit\n" +
+                "8. Exit\n" +
+                "\nPlease select an option from above:\n", outContent.toString());
+
+    }
+
+    @Test
+    public void displaysLoggedInMenu(){
+
+        UserLogin.isLoggedIn = true;
+        Menu.printMenu();
+        assertEquals("\n---------Menu---------\n" +
+                "1. Display Books\n" +
+                "2. Display Movies\n" +
+                "3. Check-out Books\n" +
+                "4. Check-out Movies\n" +
+                "5. Return Books\n" +
+                "6. Return Movies\n" +
+                "7. User Details\n" +
+                "8. Logout\n" +
+                "9. Exit\n" +
                 "\nPlease select an option from above:\n", outContent.toString());
 
     }

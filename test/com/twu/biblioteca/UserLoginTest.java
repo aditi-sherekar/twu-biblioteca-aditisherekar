@@ -1,6 +1,5 @@
 package com.twu.biblioteca;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,6 +15,8 @@ public class UserLoginTest {
     public void doesMenuDisplayCorrectOptionName(){
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new UserLogin());
+
+        UserLogin.isLoggedIn = false;
 
         assertEquals("Login", Menu.createOptionsList().get(displayNameIndex + 7).displayOptionName());
 
@@ -44,10 +45,6 @@ public class UserLoginTest {
         assertEquals("Sorry, the library number or password entered was incorrect. Please try again.\n", outContent.toString());
     }
 
-    @After
-    public void deleteOutputFile() {
-        .delete();}
-
     @Test
     public void doesCorrectCredentialsPrintSuccessfulMessage(){
 
@@ -55,8 +52,6 @@ public class UserLoginTest {
 
         CopyOnWriteArrayList<Book> userBookList = new CopyOnWriteArrayList<Book>();
 
-        User user1 = new User("123-4567", "Password", "Full Name", "fullname@outlook.com", "08001234567", userBookList);
-        Library.addUser(user1);
         String libraryNumber = "123-4567";
         String password = "Password";
         UserLogin.processLogin(libraryNumber, password);
@@ -64,6 +59,5 @@ public class UserLoginTest {
         assertEquals("You have successfully logged in!\n", outContent.toString());
 
     }
-
 
 }
