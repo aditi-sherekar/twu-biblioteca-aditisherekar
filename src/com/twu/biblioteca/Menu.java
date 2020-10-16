@@ -17,7 +17,7 @@ public class Menu {
         optionsList.add(new CheckOutMovie());
         optionsList.add(new ReturnBook());
         optionsList.add(new ReturnMovie());
-        optionsList.add(new Login());
+        optionsList.add(new UserLogin());
         UserLogin.addMenuOption();
         optionsList.add(new QuitApp());
 

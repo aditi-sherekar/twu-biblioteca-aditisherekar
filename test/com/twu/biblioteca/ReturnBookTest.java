@@ -21,18 +21,18 @@ public class ReturnBookTest {
     @Test
     public void doesMenuDisplayCorrectOptionName(){
 
-        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnBook());
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        assertEquals("Return Books", Menu.optionsList.get(displayNameIndex + 5).displayOptionName());
+        assertEquals("Return Books", Menu.createOptionsList().get(displayNameIndex + 5).displayOptionName());
 
     }
 
     @Test
     public void doesReturnBookHandleIfNoCheckedOutBooks(){
 
-        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnBook());
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
-        Menu.optionsList.get(displayNameIndex + 5).excuteOption();
+        Menu.createOptionsList().get(displayNameIndex + 5).excuteOption();
 
         assertEquals("There are no books to be returned.\n", outContent.toString());
     }
@@ -40,7 +40,7 @@ public class ReturnBookTest {
     @Test
     public void doesReturnBookGiveSuccessfulReturnMessage(){
 
-        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnBook());
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
         Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.checkedOutBookList.add(book1);
@@ -53,7 +53,7 @@ public class ReturnBookTest {
     @Test
     public void doesReturnBookGiveUnSuccessfulReturnMessage(){
 
-        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnBook());
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
 
         Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.checkedOutBookList.add(book1);
@@ -66,7 +66,7 @@ public class ReturnBookTest {
     @Test
     public void doesReturnBookPutBookBackInLibraryAfterReturn(){
 
-        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnBook());
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
         ArrayList<Book> bookList = new ArrayList<Book>();
         Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         bookList.add(book1);
@@ -80,7 +80,7 @@ public class ReturnBookTest {
     @Test
     public void doesReturnBookRemoveBookFromCheckedOutBookAfterReturn(){
 
-        Integer displayNameIndex = Menu.optionsList.indexOf(new ReturnBook());
+        Integer displayNameIndex = Menu.createOptionsList().indexOf(new ReturnBook());
         ArrayList<Book> bookList = new ArrayList<Book>();
         Book book1 = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
         Library.checkedOutBookList.add(book1);

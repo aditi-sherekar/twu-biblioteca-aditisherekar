@@ -3,9 +3,22 @@ package com.twu.biblioteca;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class UserLogin {
+public class UserLogin implements ExcuteOptions {
 
     public static boolean isLoggedIn = false;
+
+    @Override
+    public String displayOptionName(){
+
+        return "Login";
+
+    }
+
+    @Override
+    public void excuteOption() {
+
+        getUserInput();
+    }
 
     public static void getUserInput(){
         String numberUserInput = "";
@@ -22,7 +35,6 @@ public class UserLogin {
         processLogin(numberUserInput, passwordUserInput);
     }
 
-
     public static void processLogin(String numberUserInput, String passwordUserInput) {
 
         Iterator<User> userIterator = Library.UserLibrary().iterator();
@@ -32,12 +44,11 @@ public class UserLogin {
             if ((user.getLibraryNumber().matches(numberUserInput)) && (user.getPassword().matches(passwordUserInput))) {
                 isLoggedIn = true;
                 Library.userLoggedInList.add(user);
-                continue;
+                System.out.println("You have successfully logged in!");
 
             }
             else{
                 System.out.println("Sorry, the library number or password entered was incorrect. Please try again.");
-                BibliotecaApp.printProgrammeMenu();
             }
         }
     }
