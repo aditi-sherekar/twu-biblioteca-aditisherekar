@@ -16,16 +16,29 @@ public class CheckOutMovie implements ExcuteOptions{
     @Override
     public void excuteOption()  {
 
-        System.out.println("   | Movie Title | Director | Release Year |");
-        System.out.println(Library.getMovieDetails());
+        if (UserLogin.isLoggedIn == true) {
+            System.out.println("   | Movie Title | Director | Release Year |");
+            if (Library.MovieLibrary().size() != 0){
+                System.out.println("   | Movie Title | Director | Release Year |");
+                System.out.println(Library.getMovieDetails());
 
-        System.out.println("Please select the movie you wish to check-out:");
+                System.out.println("Please select the movie you wish to check-out:");
 
-        Scanner optionSelection = new Scanner(System.in);
-        selectedOption = optionSelection.nextLine();
+                Scanner optionSelection = new Scanner(System.in);
+                selectedOption = optionSelection.nextLine();
 
 
-        processMovieCheckOut(selectedOption);
+                processMovieCheckOut(selectedOption);
+            }
+            else{
+                System.out.println("   |      No movies available to check-out      |");
+            }
+
+        }
+        else{
+            UserLogin.getUserInput();
+            excuteOption();
+        }
     }
 
     public static void processMovieCheckOut(String optionSelected){

@@ -16,18 +16,24 @@ public class ReturnMovie implements ExcuteOptions {
     @Override
     public void excuteOption() {
 
-        if(Library.CheckedOutMovie().size() == 0){
-            System.out.println("There are no movies to be returned.");
+        if (UserLogin.isLoggedIn == true) {
+            if(Library.CheckedOutMovie().size() == 0){
+                System.out.println("There are no movies to be returned.");
 
+            }
+            else{
+
+                System.out.println("Please enter the movie you wish to return:");
+                Scanner optionSelection = new Scanner(System.in);
+                String selectedOption = optionSelection.nextLine();
+
+                processMovieReturn(selectedOption);
+
+            }
         }
         else{
-
-            System.out.println("Please enter the movie you wish to return:");
-            Scanner optionSelection = new Scanner(System.in);
-            String selectedOption = optionSelection.nextLine();
-
-            processMovieReturn(selectedOption);
-
+            UserLogin.getUserInput();
+            excuteOption();
         }
 
     }
