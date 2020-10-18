@@ -13,6 +13,7 @@ public class Logout implements ExcuteOptions {
     public void excuteOption(){
 
         UserLogin.isLoggedIn = false;
+        Library.userLoggedInList.clear();
 
         System.out.println("You have successfully logged out!");
     }

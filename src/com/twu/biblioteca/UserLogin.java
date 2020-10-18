@@ -41,16 +41,32 @@ public class UserLogin implements ExcuteOptions {
 
         while(userIterator.hasNext()) {
             User user = userIterator.next();
-            if ((user.getLibraryNumber().matches(numberUserInput)) && (user.getPassword().matches(passwordUserInput))) {
-                isLoggedIn = true;
-                Library.userLoggedInList.add(user);
-                System.out.println("You have successfully logged in!");
+            if ((user.getLibraryNumber().matches(numberUserInput))) {
+
+                if(user.getPassword().matches(passwordUserInput)){
+                    isLoggedIn = true;
+                    Library.userLoggedInList.add(user);
+                    break;
+                }
 
             }
-            else{
-                System.out.println("Sorry, the library number or password entered was incorrect. Please try again.");
-            }
+
         }
+
+        if (isLoggedIn == true)
+        {
+            System.out.println("You have successfully logged in!");
+        }
+        else
+        {
+            System.out.println("Invalid username/password combination");
+        }
+
+
+
     }
 
 }
+
+
+
