@@ -49,6 +49,7 @@ public class CheckOutMovie implements ExcuteOptions{
             Movie movie = movieIterator.next();
             if (movie.getMovieTitle().matches(optionSelected)) {
                 Library.MovieLibrary().remove(movie);
+                User.addUserMovies(movie);
                 Library.CheckedOutMovie().add(movie);
                 System.out.println("Thank you! Enjoy the movie!");
                 return;

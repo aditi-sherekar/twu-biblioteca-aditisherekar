@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -34,9 +33,7 @@ public class UserLoginTest {
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new UserLogin());
 
-        CopyOnWriteArrayList<Book> userBookList = new CopyOnWriteArrayList<Book>();
-
-        User user1 = new User("123-4567", "Password", "Full Name", "fullname@outlook.com", "08001234567", userBookList);
+        User user1 = new User("123-4567", "Password", "Full Name", "fullname@outlook.com", "08001234567");
         Library.addUser(user1);
         String libraryNumber = "1230987";
         String password = "Hello";
@@ -49,8 +46,6 @@ public class UserLoginTest {
     public void doesCorrectCredentialsPrintSuccessfulMessage(){
 
         Integer displayNameIndex = Menu.createOptionsList().indexOf(new UserLogin());
-
-        CopyOnWriteArrayList<Book> userBookList = new CopyOnWriteArrayList<Book>();
 
         String libraryNumber = "123-4567";
         String password = "Password";

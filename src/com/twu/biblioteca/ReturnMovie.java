@@ -46,6 +46,7 @@ public class ReturnMovie implements ExcuteOptions {
             Movie movie = checkOutMovieIterator.next();
             if (movie.getMovieTitle().matches(optionSelected)) {
                 Library.MovieLibrary().add(movie);
+                User.removeUserMovies(movie);
                 Library.CheckedOutMovie().remove(movie);
                 System.out.println("Thank you for returning the movie.");
 

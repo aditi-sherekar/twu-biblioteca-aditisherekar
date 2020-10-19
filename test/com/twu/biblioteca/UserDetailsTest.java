@@ -5,13 +5,12 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 import static org.junit.Assert.assertEquals;
 
 public class UserDetailsTest {
 
-    CopyOnWriteArrayList<Book> userBookList = new CopyOnWriteArrayList<Book>();
+
     //User user = new User("123-4567", "Password", "Aditi Sherekar", "aditisherekar@test.com", "12345678", userBookList);
 
     @Test
@@ -36,7 +35,7 @@ public class UserDetailsTest {
     public void doesUserDetailsReturnDetailsOfUser(){
 
         Book book = new Book(new BookTitle("The Great Gatsby"), new Author("F. Scott Fitzgerald"), new BookYear("1925"));
-        User user = new User("123-4567", "Password", "Aditi Sherekar", "aditisherekar@test.com", "12345678", userBookList);
+        User user = new User("123-4567", "Password", "Aditi Sherekar", "aditisherekar@test.com", "12345678");
         Library.userLoggedInList.add(user);
         UserLogin.isLoggedIn = true;
         User.userBookList.add(book);

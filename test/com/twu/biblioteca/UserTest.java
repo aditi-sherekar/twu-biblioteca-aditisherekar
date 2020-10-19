@@ -9,8 +9,9 @@ import static org.junit.Assert.assertEquals;
 public class UserTest {
 
     CopyOnWriteArrayList<Book> userBookList = new CopyOnWriteArrayList<Book>();
+    CopyOnWriteArrayList<Movie> userMovieList = new CopyOnWriteArrayList<Movie>();
 
-    User user = new User("123-4567", "Password", "Aditi Sherekar", "aditisherekar@test.com", "12345678", userBookList);
+    User user = new User("123-4567", "Password", "Aditi Sherekar", "aditisherekar@test.com", "12345678");
 
     @Test
     public void doesGetLibraryNumberGetCorrectNumber(){
@@ -55,6 +56,17 @@ public class UserTest {
         userBookList.add(book);
 
         assertEquals(userBookList, user.getUserBooks());
+
+    }
+
+    @Test
+    public void doesGetUserMovieListGetListOfMovies(){
+
+        Movie movie = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
+
+        userMovieList.add(movie);
+
+        assertEquals(userMovieList, user.getUserMovies());
 
     }
 

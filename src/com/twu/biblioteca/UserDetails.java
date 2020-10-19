@@ -25,6 +25,7 @@ public class UserDetails implements ExcuteOptions {
             System.out.println("User Details\n");
 
             String bookName = "";
+            String movieName = "";
 
             Iterator<User> userIterator = Library.UserLoggedInLibrary().iterator();
 
@@ -34,13 +35,17 @@ public class UserDetails implements ExcuteOptions {
                     bookName += user.getUserBooks().get(i).getBookTitle() + ", ";
                 }
 
+                for (int i = 0; i < User.userMovieList.size(); i++) {
+                    movieName += user.getUserMovies().get(i).getMovieTitle() + ", ";
+                }
+
 
                 System.out.println("Name: " + user.getName());
                 System.out.println("Library Number: " + user.getLibraryNumber());
                 System.out.println("Email: " + user.getEmail());
                 System.out.println("Phone Number: " + user.getPhoneNumber());
                 System.out.println("Checked-out Books: " + bookName);
-
+                System.out.println("Checked-out Movies: " + movieName);
             }
 
         }

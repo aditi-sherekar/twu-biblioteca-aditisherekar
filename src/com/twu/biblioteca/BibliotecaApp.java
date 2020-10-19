@@ -102,8 +102,8 @@ public class BibliotecaApp {
         Library.addBook(book2);
         Movie movie1 = new Movie(new MovieTitle("Black Panther"), new Director("Ryan Coogler"), new MovieYear("2018"));
         Library.addMovie(movie1);
-        User user1 = new User("123-4567", "Password", "Full Name", "fullname@outlook.com", "08001234567", User.userBookList);
-        User user2 = new User("890-1234", "Hello", "Full Name", "fullname@outlook.com", "08001234567", User.userBookList);
+        User user1 = new User("123-4567", "Password", "Full Name", "fullname@outlook.com", "08001234567");
+        User user2 = new User("890-1234", "Hello", "Full Name", "fullname@outlook.com", "08001234567");
 
         Library.addUser(user1);
         Library.addUser(user2);

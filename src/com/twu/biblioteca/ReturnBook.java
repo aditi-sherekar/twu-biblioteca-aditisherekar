@@ -46,6 +46,7 @@ public class ReturnBook implements ExcuteOptions {
             if (book.getBookTitle().matches(optionSelected)) {
                 Library.BookLibrary().add(book);
                 Library.CheckedOutBook().remove(book);
+                User.removeUserBooks(book);
                 System.out.println("Thank you for returning the book.");
 
             }
