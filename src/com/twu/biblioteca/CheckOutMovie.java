@@ -19,7 +19,6 @@ public class CheckOutMovie implements ExcuteOptions{
         if (UserLogin.isLoggedIn == true) {
             System.out.println("   | Movie Title | Director | Release Year |");
             if (Library.MovieLibrary().size() != 0){
-                System.out.println("   | Movie Title | Director | Release Year |");
                 System.out.println(Library.getMovieDetails());
 
                 System.out.println("Please select the movie you wish to check-out:");

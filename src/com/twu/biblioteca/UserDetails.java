@@ -32,11 +32,19 @@ public class UserDetails implements ExcuteOptions {
             while (userIterator.hasNext()) {
                 User user = userIterator.next();
                 for (int i = 0; i < User.userBookList.size(); i++) {
-                    bookName += user.getUserBooks().get(i).getBookTitle() + ", ";
+                    if(i > 0){
+                        bookName += ", " + user.getUserBooks().get(i).getBookTitle();
+                    }
+                    else{
+                        bookName += user.getUserBooks().get(i).getBookTitle();
+                    }
                 }
 
                 for (int i = 0; i < User.userMovieList.size(); i++) {
-                    movieName += user.getUserMovies().get(i).getMovieTitle() + ", ";
+                    if(i > 0){
+                        movieName += " , " + user.getUserMovies().get(i).getMovieTitle();
+                    }
+                    movieName += user.getUserMovies().get(i).getMovieTitle();
                 }
 
 
